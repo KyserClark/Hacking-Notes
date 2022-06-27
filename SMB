@@ -2,8 +2,14 @@ enumerate smb shares:
 nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
 
 inspect share:
-smbclient //[SMB-SERVER-IP]/[SHARE-NAME]
+smbclient //[TARGET-IP]/[SHARE-NAME]
 
+recursively download SMB share:
+smbget -R smb://[SMB-SERVER-IP]/[SHARE-NAME]
+(Submit username and password as nothing if the share is not secured)
+
+enumerate specific share to see mounts: 
+nmap -p [PORT] --script=nfs-ls,nfs-statfs,nfs-showmount [TARGET-IP]
 
 
 
