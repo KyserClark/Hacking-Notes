@@ -1,0 +1,12 @@
+enumerate smb shares:
+nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
+
+inspect share:
+smbclient //[SMB-SERVER-IP]/[SHARE-NAME]
+
+
+
+
+************************************************************************************************************************
+* [Square Brackets] indicate changeable fields, tailor them to your use case. Remove the brackets for this to function *
+************************************************************************************************************************
