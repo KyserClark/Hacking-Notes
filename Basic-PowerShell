@@ -1,0 +1,3 @@
+manually find out the service name:
+
+powershell -c "Get-Service"
