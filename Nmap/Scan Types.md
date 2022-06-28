@@ -12,6 +12,7 @@
    * [TCP SYN Scan](#tcp-syn-scan)
    * [UDP Scan](#udp-scan)
       * [Options](#options)
+* [
 
 ## Nmap Live Host Discovery
 
@@ -101,45 +102,65 @@ rate >= 15 packets/sec
 at least 100 probes in parallel
 
 *********************************************************
-Nmap Advanced Port Scans
+## Nmap Advanced Port Scans
 
 
-TCP Null Scan:
+### TCP Null Scan
+```
 sudo nmap -sN MACHINE_IP
+```
 
-TCP FIN Scan:
+### TCP FIN Scan
+```
 sudo nmap -sF MACHINE_IP
+```
 
-TCP Xmas Scan:
+### TCP Xmas Scan
+```
 sudo nmap -sX MACHINE_IP
+```
 
-TCP Maimon Scan:	
+### TCP Maimon Scan
+```
 sudo nmap -sM MACHINE_IP
+```
 
-TCP ACK Scan:	
+### TCP ACK Scan
+```
 sudo nmap -sA MACHINE_IP
+```
 
-TCP Window Scan:	
+### TCP Window Scan	
+```
 sudo nmap -sW MACHINE_IP
+```
 
-Custom TCP Scan:	
+### Custom TCP Scan
+```
 sudo nmap --scanflags URGACKPSHRSTSYNFIN MACHINE_IP
+```
 
-Spoofed Source IP:	
+### Spoofed Source IP	
+```
 sudo nmap -S SPOOFED_IP MACHINE_IP
+```
 
-Spoofed MAC Address:
+### Spoofed MAC Address
+```
 --spoof-mac SPOOFED_MAC
+```
 
-Decoy Scan:
+### Decoy Scan
+```
 nmap -D DECOY_IP,ME MACHINE_IP
+```
 
-Idle (Zombie) Scan	
+### Idle (Zombie) Scan
+```
 sudo nmap -sI ZOMBIE_IP MACHINE_IP
+```
 
-
-OPTIONS
-
+#### OPTIONS
 
 Fragment IP data into 8 bytes:
 -f
