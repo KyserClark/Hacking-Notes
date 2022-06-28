@@ -2,7 +2,7 @@
 
 ## Nmap Live Host Discovery
 
-* [ARP Scan]	
+* [ARP Scan](#arp scan)	
 ```
 sudo nmap -PR -sn MACHINE_IP/24
 ```
