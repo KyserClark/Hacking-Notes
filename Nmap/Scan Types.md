@@ -4,7 +4,7 @@
    * [ICMP Echo Scan](#icmp-echo-scan)
    * [ICMP Timestamp Scan](#icmp-timestamp-scan)
    * [ICMP Address Mask Scan](#icmp-address-mask-scan)
-   * [TCP SYN Ping Scan](#tcp-syn-scan)
+   * [TCP SYN Ping Scan](#tcp-syn-ping-scan)
    * [TCP ACK Ping Scan](#tcp-ack-ping-scan)
    * [UDP Ping Scan](#udp-ping-scan)
 * [Nmap Basic Port Scans]
