@@ -7,6 +7,8 @@
    * [TCP SYN Ping Scan](#tcp-syn-scan)
    * [TCP ACK Ping Scan](#tcp-ack-ping-scan)
    * [UDP Ping Scan](#udp-ping-scan)
+* [Nmap Basic Port Scans]
+   * [TCP Connect Scan
 
 ## Nmap Live Host Discovery
 
@@ -206,8 +208,8 @@ save output in XML format
 save output in normal, XML and Grepable formats
 
 ## References
-https://tryhackme.com/room/nmap01
-https://tryhackme.com/room/nmap02
-https://tryhackme.com/room/nmap03
-https://tryhackme.com/room/nmap04
+* https://tryhackme.com/room/nmap01
+* https://tryhackme.com/room/nmap02
+* https://tryhackme.com/room/nmap03
+* https://tryhackme.com/room/nmap04
 
