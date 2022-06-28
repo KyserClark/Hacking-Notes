@@ -70,7 +70,7 @@ UDP Scan:
 sudo nmap -sU MACHINE_IP
 ```
 
-### Options
+#### Options
 
 Option                | Description
 --------------------- | -------------
@@ -142,7 +142,19 @@ nmap -D DECOY_IP,ME MACHINE_IP
 sudo nmap -sI ZOMBIE_IP MACHINE_IP
 ```
 
-#### OPTIONS
+#### Options
+
+Option                 | Description
+---------------------- | -------------
+-f                     | Fragment IP data into 8 bytes
+-ff                    | Fragment IP data into 16 bytes
+--source-port PORT_NUM | specify source port number
+--data-length NUM      | append random data to reach given length
+--reason               | explains how Nmap made its conclusion
+-v                     | Verbose
+-vv                    | Very verbose
+-d                     | Debugging
+-dd                    | Detailed debugging
 
 Fragment IP data into 8 bytes:
 -f
