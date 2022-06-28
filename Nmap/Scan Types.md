@@ -1,9 +1,8 @@
-*********************************************************
-Nmap Live Host Discovery
-https://tryhackme.com/room/nmap01
+# Nmap Scan Types
 
+## Nmap Live Host Discovery
 
-ARP Scan:	
+* [ARP Scan]	
 sudo nmap -PR -sn MACHINE_IP/24
 
 ICMP Echo Scan:	
@@ -26,7 +25,6 @@ sudo nmap -PU53,161,162 -sn MACHINE_IP/30
 
 *********************************************************
 Nmap Basic Port Scans
-https://tryhackme.com/room/nmap02
 
 TCP Connect Scan:	
 sudo nmap -sT MACHINE_IP
@@ -67,7 +65,6 @@ at least 100 probes in parallel
 
 *********************************************************
 Nmap Advanced Port Scans
-https://tryhackme.com/room/nmap03
 
 
 TCP Null Scan:
@@ -136,7 +133,6 @@ more details for debugging:
 
 *********************************************************
 Nmap Post Port Scans
-https://tryhackme.com/room/nmap04
 
 
 OPTIONS
@@ -177,4 +173,9 @@ save output in XML format
 -oA	
 save output in normal, XML and Grepable formats
 
-*********************************************************
+## References
+https://tryhackme.com/room/nmap01
+https://tryhackme.com/room/nmap02
+https://tryhackme.com/room/nmap03
+https://tryhackme.com/room/nmap04
+
