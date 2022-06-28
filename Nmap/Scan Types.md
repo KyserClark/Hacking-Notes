@@ -72,10 +72,16 @@ sudo nmap -sU MACHINE_IP
 
 ### Options
 
-Option        | Description
-------------- | -------------
--p-           | Content Cell
-Content Cell  | Content Cell
+Option                | Description
+--------------------- | -------------
+-p-                   | All ports
+-p1-1023              | Ports 1-1023
+-F                    | Top 100 common ports
+-r                    | Scan ports in consecutive order
+-T<0-5>               | -T0 being the slowest and T5 the fastest
+--max-rate 50         | rate <= 50 packets/sec
+--max-rate 15         | rate >= 15 packets/sec
+--min-parallelism 100 | at least 100 probes in parallel
 
 -p-	
 all ports
