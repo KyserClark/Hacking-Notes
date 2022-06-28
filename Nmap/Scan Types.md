@@ -1,6 +1,12 @@
 # Nmap Scan Types
 * [Nmap Live Host Discovery](#nmap-live-host-discovery)
-   * [Arp Scan](#arp-scan)
+   * [ARP Scan](#arp-scan)
+   * [ICMP Echo Scan](#icmp-echo-scan)
+   * [ICMP Timestamp Scan](#icmp-timestamp-scan)
+   * [ICMP Address Mask Scan](#icmp-address-mask-scan)
+   * [TCP SYN Ping Scan](#tcp-syn-scan)
+   * [TCP ACK Ping Scan](#tcp-ack-ping-scan)
+   * [UDP Ping Scan](#udp-ping-scan)
 
 ## Nmap Live Host Discovery
 
@@ -9,17 +15,17 @@
 sudo nmap -PR -sn MACHINE_IP/24
 ```
 
-### ICMP Echo Scan:	
+### ICMP Echo Scan
 ```
 sudo nmap -PE -sn MACHINE_IP/24
 ```
 
-### ICMP Timestamp Scan:
+### ICMP Timestamp Scan
 ```
 sudo nmap -PP -sn MACHINE_IP/24
 ```
 
-### ICMP Address Mask Scan:
+### ICMP Address Mask Scan
 ```
 sudo nmap -PM -sn MACHINE_IP/24
 ```
@@ -34,7 +40,7 @@ sudo nmap -PS22,80,443 -sn MACHINE_IP/30
 sudo nmap -PA22,80,443 -sn MACHINE_IP/30
 ```
 
-### UDP Ping Scan:
+### UDP Ping Scan
 ``` 
 sudo nmap -PU53,161,162 -sn MACHINE_IP/30
 ```
