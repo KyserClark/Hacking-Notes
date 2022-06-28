@@ -78,34 +78,10 @@ Option                | Description
 -p1-1023              | Ports 1-1023
 -F                    | Top 100 common ports
 -r                    | Scan ports in consecutive order
--T<0-5>               | -T0 being the slowest and T5 the fastest
---max-rate 50         | rate <= 50 packets/sec
---max-rate 15         | rate >= 15 packets/sec
---min-parallelism 100 | at least 100 probes in parallel
-
--p-	
-all ports
-
--p1-1023
-scan ports 1 to 1023
-
--F	
-100 most common ports
-
--r	
-scan ports in consecutive order
-
--T<0-5>	
--T0 being the slowest and T5 the fastest
-
---max-rate 50	
-rate <= 50 packets/sec
-
---min-rate 15	
-rate >= 15 packets/sec
-
---min-parallelism 100
-at least 100 probes in parallel
+-T<0-5>               | -T0 being the slowest and -T5 the fastest
+--max-rate 50         | Rate <= 50 packets/sec
+--max-rate 15         | Rate >= 15 packets/sec
+--min-parallelism 100 | At least 100 probes in parallel
 
 *********************************************************
 ## Nmap Advanced Port Scans
