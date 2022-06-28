@@ -14,7 +14,6 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.86.128 http-post-form "
 ```
 
 
-
 ************************************************************************************************************************
-* [Square Brackets] indicate changeable fields, tailor them to your use case. Remove the brackets for this to function *
+* [Square Brackets] indicate changeable fields, tailor them to your use case. Remove the brackets for this to function
 ************************************************************************************************************************
