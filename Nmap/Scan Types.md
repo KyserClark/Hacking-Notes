@@ -7,11 +7,11 @@
    * [TCP SYN Ping Scan](#tcp-syn-ping-scan)
    * [TCP ACK Ping Scan](#tcp-ack-ping-scan)
    * [UDP Ping Scan](#udp-ping-scan)
-* [Nmap Basic Port Scans]
+* [Nmap Basic Port Scans](#nmap-basic-port-scans)
    * [TCP Connect Scan](#tcp-connect-scan)
    * [TCP SYN Scan](#tcp-syn-scan)
    * [UDP Scan](#udp-scan)
-      * Options
+      * [Options](#options)
 
 ## Nmap Live Host Discovery
 
