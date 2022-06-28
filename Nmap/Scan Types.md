@@ -1,6 +1,6 @@
-# Nmap Scan Types
+## Nmap Scan Types
 
-## Nmap Live Host Discovery
+### Nmap Live Host Discovery
 
 ARP Scan
 ```
