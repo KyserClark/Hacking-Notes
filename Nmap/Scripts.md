@@ -1,7 +1,7 @@
 # Nmap Scripts
 
-[Enumerate SMB Shares](#enumerate-smb-shares)
-[Show SMB Mounts](#show-smb-mounts)
+* [Enumerate SMB Shares](#enumerate-smb-shares)
+* [Show SMB Mounts](#show-smb-mounts)
 
 ## Enumerate SMB Shares
 ```
