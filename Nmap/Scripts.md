@@ -3,6 +3,10 @@
 * [Enumerate SMB Shares](#enumerate-smb-shares)
 * [Show SMB Mounts](#show-smb-mounts)
 
+*************************************************************************************************************************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  Note that bracket charactors themselves [] require removal. See examples
+*************************************************************************************************************************************************************************
+
 ## Enumerate SMB Shares
 ```
 nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
@@ -13,6 +17,3 @@ nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
 nmap -p [PORT] --script=nfs-ls,nfs-statfs,nfs-showmount [TARGET-IP]
 ```
 
-*************************************************************************************************************************************************************************
-Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields. Bracket charactors themselves [] require removal.
-*************************************************************************************************************************************************************************
