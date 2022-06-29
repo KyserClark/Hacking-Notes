@@ -5,6 +5,9 @@ smbclient -L \\[TARGET-IP]
 inspect share:
 smbclient //[TARGET-IP]/[SHARE-NAME]
 
+log into share:
+smbclient -U [USERNAME]//[TARGET-IP]/[SHARE-NAME]
+
 recursively download SMB share:
 smbget -R smb://[SMB-SERVER-IP]/[SHARE-NAME]
 (Submit username and password as nothing if the share is not secured)
