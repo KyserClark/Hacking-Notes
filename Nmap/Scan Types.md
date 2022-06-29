@@ -24,6 +24,7 @@
    * [Spoofed MAC Address](#spoofed-mac-address)
    * [Decoy Scan](#decoy-scan)
    * [Idle (Zombie) Scan](#idle-(zombie)-scan)
+      * [Options](#options)
 
 ## Nmap Live Host Discovery
 
