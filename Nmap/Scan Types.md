@@ -33,37 +33,37 @@
 
 ### ARP Scan
 ```
-sudo nmap -PR -sn TARGET-IP/24
+sudo nmap -PR -sn [TARGET-IP]/24
 ```
 
 ### ICMP Echo Scan
 ```
-sudo nmap -PE -sn TARGET-IP/24
+sudo nmap -PE -sn [TARGET-IP]/24
 ```
 
 ### ICMP Timestamp Scan
 ```
-sudo nmap -PP -sn TARGET-IP/24
+sudo nmap -PP -sn [TARGET-IP]/24
 ```
 
 ### ICMP Address Mask Scan
 ```
-sudo nmap -PM -sn TARGET-IP/24
+sudo nmap -PM -sn [TARGET-IP]/24
 ```
 
 ### TCP SYN Ping Scan
 ```
-sudo nmap -PS22,80,443 -sn TARGET-IP/30
+sudo nmap -PS22,80,443 -sn [TARGET-IP]/30
 ```
 
 ### TCP ACK Ping Scan
 ```
-sudo nmap -PA22,80,443 -sn TARGET-IP/30
+sudo nmap -PA22,80,443 -sn [TARGET-IP]/30
 ```
 
 ### UDP Ping Scan
 ``` 
-sudo nmap -PU53,161,162 -sn TARGET-IP/30
+sudo nmap -PU53,161,162 -sn [TARGET-IP]/30
 ```
 
 *********************************************************
@@ -72,17 +72,17 @@ sudo nmap -PU53,161,162 -sn TARGET-IP/30
 
 ### TCP Connect Scan:	
 ```
-sudo nmap -sT TARGET-IP
+sudo nmap -sT [TARGET-IP]
 ```
 
 ### TCP SYN Scan: 
 ```
-sudo nmap -sS TARGET-IP
+sudo nmap -sS [TARGET-IP]
 ```
 
 ### UDP Scan
 ```
-sudo nmap -sU TARGET-IP
+sudo nmap -sU [TARGET-IP]
 ```
 
 #### Basic Options
@@ -104,42 +104,42 @@ Option                | Description
 
 ### TCP Null Scan
 ```
-sudo nmap -sN TARGET-IP
+sudo nmap -sN [TARGET-IP]
 ```
 
 ### TCP FIN Scan
 ```
-sudo nmap -sF TARGET-IP
+sudo nmap -sF [TARGET-IP]
 ```
 
 ### TCP Xmas Scan
 ```
-sudo nmap -sX TARGET-IP
+sudo nmap -sX [TARGET-IP]
 ```
 
 ### TCP Maimon Scan
 ```
-sudo nmap -sM TARGET-IP
+sudo nmap -sM [TARGET-IP]
 ```
 
 ### TCP ACK Scan
 ```
-sudo nmap -sA TARGET-IP
+sudo nmap -sA [TARGET-IP]
 ```
 
 ### TCP Window Scan	
 ```
-sudo nmap -sW TARGET-IP
+sudo nmap -sW [TARGET-IP]
 ```
 
 ### Custom TCP Scan
 ```
-sudo nmap --scanflags URGACKPSHRSTSYNFIN TARGET-IP
+sudo nmap --scanflags URGACKPSHRSTSYNFIN [TARGET-IP]
 ```
 
 ### Spoofed Source IP	
 ```
-sudo nmap -S SPOOFED_IP TARGET-IP
+sudo nmap -S SPOOFED_IP [TARGET-IP]
 ```
 
 ### Spoofed MAC Address
@@ -149,12 +149,12 @@ sudo nmap -S SPOOFED_IP TARGET-IP
 
 ### Decoy Scan
 ```
-nmap -D DECOY_IP,ME TARGET-IP
+nmap -D DECOY_IP,ME [TARGET-IP]
 ```
 
 ### Idle (Zombie) Scan
 ```
-sudo nmap -sI ZOMBIE_IP TARGET-IP
+sudo nmap -sI ZOMBIE_IP [TARGET-IP]
 ```
 
 #### Advanced Options
