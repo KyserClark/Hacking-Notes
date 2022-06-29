@@ -1,16 +1,19 @@
 # Netcat Shell Stabilization
 
 ## Technique #1
+1.
 ```
 python -c 'import pty;pty.spawn("/bin/bash")'
 ```
 (replace "python" with "python2" or "python3" as required)
+2.
 ```
 export TERM=xterm
 ```
 (gives access to term commands such as clear)
 
-*Background shell with Ctrl+Z*
+3. *Background shell with Ctrl+Z*
+4. 
 ```
 stty raw -echo; fg
 ```
