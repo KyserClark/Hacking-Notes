@@ -1,6 +1,6 @@
 # Basic PowerShell Commands
 
-manually find out service name:
+## Find Service Name:
 ```
 powershell -c "Get-Service"
 ```
