@@ -5,12 +5,12 @@
 ```
 python -c 'import pty;pty.spawn("/bin/bash")'
 ```
-2. Run this command:(gives access to term commands such as clear)
+2. Give access to term commands such as clear with this command:
 ```
 export TERM=xterm
 ```
 3. *Background shell with Ctrl+Z*
-4. Run this command: (gives tab autocomplete, arrow keys, and Ctrl+C and forgrounds the shell)
+4. Give tab autocomplete, arrow keys, and Ctrl+C and forgrounds the shell with this command:
 ```
 stty raw -echo; fg
 ```
