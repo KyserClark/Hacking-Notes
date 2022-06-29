@@ -3,6 +3,6 @@ This repository serves as my personal hacking notebook/toolbox. It is a quick re
 
 This repository will be continually updated and changed throughout my cybersecurity career. I hope you find it as helpful as I do :)
 
-Credits:
-TryHackMe
-TryHackMe Walkthrough Authors
+### Credits
+* TryHackMe
+* TryHackMe Walkthrough Authors
