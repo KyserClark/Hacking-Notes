@@ -42,14 +42,22 @@ sudo nmap -PR -sn 10.10.86.128/24
 **********************************************
 ### ICMP Echo Scan
 ```
-sudo nmap -PE -sn [TARGET-IP]/24
+sudo nmap -PE -sn [TARGET-IP]/[CIDR-NOTATION]
 ```
-
+Example:
+```
+sudo nmap -PE -sn 10.10.1.1/16
+```
+**********************************************
 ### ICMP Timestamp Scan
 ```
-sudo nmap -PP -sn [TARGET-IP]/24
+sudo nmap -PP -sn [TARGET-IP]/[CIDR-NOTATION]
 ```
-
+Example:
+```
+sudo nmap -PP -sn 192.168.100.1/28
+```
+**********************************************
 ### ICMP Address Mask Scan
 ```
 sudo nmap -PM -sn [TARGET-IP]/24
