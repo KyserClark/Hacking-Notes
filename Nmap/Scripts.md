@@ -7,6 +7,7 @@
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
 Note: Bracket charactors themselves [ ] require removal. See examples.
 *************************************************************************************************************************************************************************
+
 ## Enumerate SMB Shares
 ```
 nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
