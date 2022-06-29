@@ -66,17 +66,17 @@ sudo nmap -PU53,161,162 -sn MACHINE_IP/30
 
 ## Nmap Basic Port Scans
 
-TCP Connect Scan:	
+### TCP Connect Scan:	
 ```
 sudo nmap -sT MACHINE_IP
 ```
 
-TCP SYN Scan: 
+### TCP SYN Scan: 
 ```
 sudo nmap -sS MACHINE_IP
 ```
 
-UDP Scan:
+### UDP Scan
 ```
 sudo nmap -sU MACHINE_IP
 ```
