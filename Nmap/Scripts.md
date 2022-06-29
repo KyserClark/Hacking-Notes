@@ -13,6 +13,6 @@ nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
 nmap -p [PORT] --script=nfs-ls,nfs-statfs,nfs-showmount [TARGET-IP]
 ```
 
-***********************************************************************************************************************************************************
-Items inside [SQUARE-BRACKETS] indicate changeable fields. They require you to tailor them to your use case. Remove the brackets for commands to function.
-***********************************************************************************************************************************************************
+*************************************************************************************************************************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable fields. They require you to tailor them to your use case. Bracket charactors require removal for commands to function.
+*************************************************************************************************************************************************************************
