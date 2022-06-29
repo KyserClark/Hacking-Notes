@@ -1,11 +1,11 @@
-# Hydra
+# Hydra HTTP
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
 Note: Bracket charactors themselves [ ] require removal. See examples.
 *********************************************************************************
 
-## Reliably bruteforce webpage logins with this command:
+### Reliably bruteforce webpage logins with this command:
 ```
 hydra -l [USERNAME] -P [WORDLIST-PATH] [TARGET-IP] http-post-form "/[LOGIN-PAGE-PATH]:[REQUEST-PAYLOAD]:[LOGIN-FAIL-TEXT]"
 ```
