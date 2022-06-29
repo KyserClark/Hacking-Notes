@@ -33,7 +33,11 @@
 
 ### ARP Scan
 ```
-sudo nmap -PR -sn [TARGET-IP]/24
+sudo nmap -PR -sn [TARGET-IP]/[CIDR-NOTATION]
+```
+Example:
+```
+sudo nmap -PR -sn 10.10.86.128/24
 ```
 
 ### ICMP Echo Scan
