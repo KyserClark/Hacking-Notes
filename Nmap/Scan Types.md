@@ -27,6 +27,7 @@
       * [Advanced Options](#advanced-options)
  * [Nmap Post Port Scans](#nmap-post-port-scans)
       * [Post Scan Options](#post-scan-options)
+ * [References](#references)
 
 ## Nmap Live Host Discovery
 
