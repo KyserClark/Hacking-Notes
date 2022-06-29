@@ -14,5 +14,5 @@ nmap -p [PORT] --script=nfs-ls,nfs-statfs,nfs-showmount [TARGET-IP]
 ```
 
 *************************************************************************************************************************************************************************
-Items inside [SQUARE-BRACKETS] indicate changeable fields. They require you to tailor them to your use case. Bracket charactors require removal for functinality
+Items inside [SQUARE-BRACKETS] indicate changeable fields. They require you to tailor them to your use case. Remove bracket charactors for functionality.
 *************************************************************************************************************************************************************************
