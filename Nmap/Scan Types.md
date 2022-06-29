@@ -29,6 +29,11 @@
       * [Post Scan Options](#post-scan-options)
  * [References](#references)
 
+***********************************************************************************************************************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
+Note: Bracket charactors themselves [ ] require removal. See examples.
+***********************************************************************************************************************************************************************
+
 ## Nmap Live Host Discovery
 
 ### ARP Scan
