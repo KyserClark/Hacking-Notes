@@ -1,23 +1,19 @@
 # Netcat Shell Stabilization
 
 ## Technique #1
-1.
+1. Run this command: (replace "python" with "python2" or "python3" as required)
 ```
 python -c 'import pty;pty.spawn("/bin/bash")'
 ```
-(replace "python" with "python2" or "python3" as required)
-2.
+2. Run this command:(gives access to term commands such as clear)
 ```
 export TERM=xterm
 ```
-(gives access to term commands such as clear)
-
 3. *Background shell with Ctrl+Z*
-4. 
+4. Run this command: (gives tab autocomplete, arrow keys, and Ctrl+C and forgrounds the shell)
 ```
 stty raw -echo; fg
 ```
-(gives tab autocomplete, arrow keys, and Ctrl+C and forgrounds the shell)
 *******************************************************************************
 ## Technique #2 (Useful with Windows Shells)
 
