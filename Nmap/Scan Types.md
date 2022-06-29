@@ -139,12 +139,12 @@ sudo nmap --scanflags URGACKPSHRSTSYNFIN [TARGET-IP]
 
 ### Spoofed Source IP	
 ```
-sudo nmap -S SPOOFED_IP [TARGET-IP]
+sudo nmap -S [SPOOFED-IP] [TARGET-IP]
 ```
 
 ### Spoofed MAC Address
 ```
---spoof-mac SPOOFED_MAC
+--spoof-mac [SPOOFED-MAC]
 ```
 
 ### Decoy Scan
@@ -154,7 +154,7 @@ nmap -D DECOY_IP,ME [TARGET-IP]
 
 ### Idle (Zombie) Scan
 ```
-sudo nmap -sI ZOMBIE_IP [TARGET-IP]
+sudo nmap -sI [ZOMBIE-IP] [TARGET-IP]
 ```
 
 #### Advanced Options
