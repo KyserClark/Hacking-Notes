@@ -1,5 +1,6 @@
 enumerate smb shares:
 nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
+smbclient -L \\[TARGET-IP]
 
 inspect share:
 smbclient //[TARGET-IP]/[SHARE-NAME]
