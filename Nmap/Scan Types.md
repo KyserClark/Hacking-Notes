@@ -12,7 +12,18 @@
    * [TCP SYN Scan](#tcp-syn-scan)
    * [UDP Scan](#udp-scan)
       * [Options](#options)
-* [
+* [Nmap Advanced Port Scans](#nmap-advanced-port-scans)
+   * [TCP Null Scan](#tcp-null-scan)
+   * [TCP FIN Scan](#tcp-fin-scan)
+   * [TCP Xmas Scan](#tcp-xmas-scan)
+   * [TCP Maimon Scan](#tcp-maimon-scan)
+   * [TCP ACK Scan](#tcp-ack-scan)
+   * [TCP Window Scan](#tcp-window-scan)
+   * [Custom TCP Scan](#custom-tcp-scan)
+   * [Spoofed Source IP](#spoofed-source-ip)
+   * [Spoofed MAC Address](#spoofed-mac-address)
+   * [Decoy Scan](#decoy-scan)
+   * [Idle (Zombie) Scan](#idle-(zombie)-scan)
 
 ## Nmap Live Host Discovery
 
