@@ -11,7 +11,7 @@
    * [TCP Connect Scan](#tcp-connect-scan)
    * [TCP SYN Scan](#tcp-syn-scan)
    * [UDP Scan](#udp-scan)
-      * [Options](#options)
+      * [Basic Options](#options)
 * [Nmap Advanced Port Scans](#nmap-advanced-port-scans)
    * [TCP Null Scan](#tcp-null-scan)
    * [TCP FIN Scan](#tcp-fin-scan)
@@ -24,7 +24,9 @@
    * [Spoofed MAC Address](#spoofed-mac-address)
    * [Decoy Scan](#decoy-scan)
    * [Idle (Zombie) Scan](#idle-(zombie)-scan)
-      * [Options](#options)
+      * [Advanced Options](#options)
+ * [Nmap Post Port Scans](#nmap-post-port-scans)
+      * [Post Options](#post-options)
 
 ## Nmap Live Host Discovery
 
@@ -82,7 +84,7 @@ sudo nmap -sS MACHINE_IP
 sudo nmap -sU MACHINE_IP
 ```
 
-#### Options
+#### Basic Options
 
 Option                | Description
 --------------------- | -------------
@@ -154,7 +156,7 @@ nmap -D DECOY_IP,ME MACHINE_IP
 sudo nmap -sI ZOMBIE_IP MACHINE_IP
 ```
 
-#### Options
+#### Advanced Options
 
 Option                 | Description
 ---------------------- | -------------
@@ -171,7 +173,7 @@ Option                 | Description
 
 ## Nmap Post Port Scans
 
-### Options
+### Post Options
 
 Option                  | Description
 ----------------------- | -------------
