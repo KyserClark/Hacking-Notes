@@ -3,7 +3,7 @@
 Reliably bruteforce webpage logins with this command:
 
 ```
-hydra -l [USERNAME] -P [WORDLIST-PATH] [TARGET-IP] http-post-form "/[LOGIN-PAGE-PATH]:[SUPER-LONG-VIEWSTATE-FOUND-IN-INSPECT-ELEMENT-DATA]:[LOGIN-FAIL-TEXT]"
+hydra -l [USERNAME] -P [WORDLIST-PATH] [TARGET-IP] http-post-form "/[LOGIN-PAGE-PATH]:[REQUEST-PAYLOAD]:[LOGIN-FAIL-TEXT]"
 ```
 
 
