@@ -93,7 +93,7 @@ Example:
 ```
 sudo nmap -PU53,161,162 -sn 192.168.1.1/24
 ```
-
+**********************************************
 ## Nmap Basic Port Scans
 
 ### TCP Connect Scan:	
