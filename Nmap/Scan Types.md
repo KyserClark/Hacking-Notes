@@ -26,7 +26,6 @@
    * [Idle (Zombie) Scan](#idle-(zombie)-scan)
       * [Advanced Options](#advanced-options)
  * [Nmap Post Port Scans](#nmap-post-port-scans)
-   * 
       * [Post Options](#post-options)
 
 ## Nmap Live Host Discovery
