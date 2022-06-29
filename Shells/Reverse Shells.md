@@ -2,6 +2,7 @@
 
 * [Nishang Invoke PowerShell TCP](#nishang-invoke-powershell-tcp)
 * [Windows Meterpreter Reverse Shell](#windows-meterpreter-reverse-shell)
+* [PHP Reverse Shell Listener](#php-reverse-shell-listener)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
