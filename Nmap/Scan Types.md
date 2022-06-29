@@ -39,7 +39,7 @@ Example:
 ```
 sudo nmap -PR -sn 10.10.86.128/24
 ```
-
+**********************************************
 ### ICMP Echo Scan
 ```
 sudo nmap -PE -sn [TARGET-IP]/24
