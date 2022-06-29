@@ -37,7 +37,7 @@ sudo nmap -PR -sn [TARGET-IP]/[CIDR-NOTATION]
 ```
 Example:
 ```
-sudo nmap -PR -sn 10.10.86.128/24
+sudo nmap -PR -sn 10.10.86.0/24
 ```
 **********************************************
 ### ICMP Echo Scan
@@ -46,7 +46,7 @@ sudo nmap -PE -sn [TARGET-IP]/[CIDR-NOTATION]
 ```
 Example:
 ```
-sudo nmap -PE -sn 10.10.1.1/16
+sudo nmap -PE -sn 10.10.133.42/16
 ```
 **********************************************
 ### ICMP Timestamp Scan
@@ -55,30 +55,44 @@ sudo nmap -PP -sn [TARGET-IP]/[CIDR-NOTATION]
 ```
 Example:
 ```
-sudo nmap -PP -sn 192.168.100.1/28
+sudo nmap -PP -sn 192.168.100.8/28
 ```
 **********************************************
 ### ICMP Address Mask Scan
 ```
-sudo nmap -PM -sn [TARGET-IP]/24
+sudo nmap -PM -sn [TARGET-IP]/[CIDR-NOTATION]
 ```
-
+Example:
+```
+sudo nmap -PM -sn 192.168.1.1/30
+```
+**********************************************
 ### TCP SYN Ping Scan
 ```
-sudo nmap -PS22,80,443 -sn [TARGET-IP]/30
+sudo nmap -PS[PORT],[PORT],[PORT] -sn [TARGET-IP]/[CIDR-NOTATION]
 ```
-
+Example:
+```
+sudo nmap -PS22,80,443 -sn 192.168.1.1/24
+```
+**********************************************
 ### TCP ACK Ping Scan
 ```
-sudo nmap -PA22,80,443 -sn [TARGET-IP]/30
+sudo nmap -PA[PORT],[PORT],[PORT] -sn [TARGET-IP]/[CIDR-NOTATION]
 ```
-
+Example:
+```
+sudo nmap -PA22,80,443 -sn 192.168.1.1/24
+```
+**********************************************
 ### UDP Ping Scan
 ``` 
-sudo nmap -PU53,161,162 -sn [TARGET-IP]/30
+sudo nmap -PU[PORT],[PORT],[PORT] -sn [TARGET-IP]/[CIDR-NOTATION]
 ```
-
-*********************************************************
+Example:
+```
+sudo nmap -PU53,161,162 -sn 192.168.1.1/24
+```
 
 ## Nmap Basic Port Scans
 
