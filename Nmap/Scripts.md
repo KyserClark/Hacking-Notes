@@ -1,4 +1,8 @@
-# Nmap Scripts #
+# Nmap Scripts
+
+[Enumerate SMB Shares](#enumerate-smb-shares)
+[Show SMB Mounts](#show-smb-mounts)
+
 ## Enumerate SMB Shares
 ```
 nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
