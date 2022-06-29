@@ -4,7 +4,7 @@
 * [Show SMB Mounts](#show-smb-mounts)
 
 *************************************************************************************************************************************************************************
-Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  Note that bracket charactors themselves [] require removal. See examples
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  Note: Bracket charactors themselves [] require removal. See examples
 *************************************************************************************************************************************************************************
 
 ## Enumerate SMB Shares
