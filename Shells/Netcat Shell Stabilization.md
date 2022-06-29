@@ -4,7 +4,7 @@
 ```
 python -c 'import pty;pty.spawn("/bin/bash")'
 ```
-(replace python with python2 or python3 as required)
+(replace "python" with "python2" or "python3" as required)
 ```
 export TERM=xterm
 ```
