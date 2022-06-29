@@ -148,86 +148,37 @@ Option                 | Description
 ---------------------- | -------------
 -f                     | Fragment IP data into 8 bytes
 -ff                    | Fragment IP data into 16 bytes
---source-port PORT_NUM | specify source port number
---data-length NUM      | append random data to reach given length
---reason               | explains how Nmap made its conclusion
+--source-port PORT_NUM | Specify source port number
+--data-length NUM      | Append random data to reach given length
+--reason               | Explains how Nmap made its conclusion
 -v                     | Verbose
 -vv                    | Very verbose
 -d                     | Debugging
 -dd                    | Detailed debugging
 
-Fragment IP data into 8 bytes:
--f
 
-Fragment IP data into 16 bytes:
--ff
+## Nmap Post Port Scans
 
-specify source port number:
---source-port PORT_NUM
+### Options
 
-append random data to reach given length:
---data-length NUM
+Option                  | Description
+----------------------- | -------------
+-sV                     | Determine service/version info on open ports
+-sV --version-light     | Try the most likely probes (2)
+-sV --version-all       | Try all available probes (9)
+-O	                    | Detect OS
+--traceroute            | Run traceroute to target
+--script=SCRIPTS	      | Nmap scripts to run
+-sC or --script=default | Run default scripts
+-A                      | Equivalent to -sV -O -sC --traceroute
+-oN                     | Save output in normal format
+-oG                     | Save output in grepable format
+-oX                     | Save output in XML format
+-oA                     | Save output in normal, XML and Grepable formats
 
-explains how Nmap made its conclusion:
---reason
-
-verbose:
--v
-
-very verbose:
--vv
-
-debugging:
--d
-
-more details for debugging:
--dd
-
-*********************************************************
-Nmap Post Port Scans
-
-
-OPTIONS
-
--sV	
-determine service/version info on open ports
-
--sV --version-light	
-try the most likely probes (2)
-
--sV --version-all	
-try all available probes (9)
-
--O	
-detect OS
-
---traceroute	
-run traceroute to target
-
---script=SCRIPTS	
-Nmap scripts to run
-
--sC or --script=default	
-run default scripts
-
--A	
-equivalent to -sV -O -sC --traceroute
-
--oN	
-save output in normal format
-
--oG	
-save output in grepable format
-
--oX	
-save output in XML format
-
--oA	
-save output in normal, XML and Grepable formats
 
 ## References
 * https://tryhackme.com/room/nmap01
 * https://tryhackme.com/room/nmap02
 * https://tryhackme.com/room/nmap03
 * https://tryhackme.com/room/nmap04
-
