@@ -1,5 +1,10 @@
 # Linux File Search
 
+*********************************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
+Note: Bracket charactors themselves [ ] require removal. See examples.
+*********************************************************************************
+
 ### Find a File by Name
 ```
 find / -name [file-name] 2>/dev/null
