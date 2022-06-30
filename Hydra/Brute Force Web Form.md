@@ -1,4 +1,4 @@
-# Hydra HTTP
+# Hydra - Brute Force Web Form
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
