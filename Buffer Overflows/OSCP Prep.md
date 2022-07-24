@@ -191,7 +191,7 @@ Example:
 nc -lnvp 4444
 ```
 
-#### Step 31: Restart application in Immunity, Run it, and run exploit.py from attack machine
+#### Step 31: Restart application and run the program in Immunity, and run exploit.py from attack machine
 
 #### Step 32: Check listener, it should have a shell
 
