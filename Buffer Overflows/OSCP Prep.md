@@ -105,7 +105,7 @@ except:
 
 *Look for a line in the output that states: EIP contains normal pattern : ... (offset XXXX)*
  
-#### Step 10: Set offset variable of exploit.py as the offset found in Step 9
+#### Step 10: Set offset variable in exploit.py as the offset found in Step 9
  
 #### Step 11: Set retn variable to "BBBB" in exploit.py
 
