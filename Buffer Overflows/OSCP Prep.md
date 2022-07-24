@@ -142,7 +142,7 @@ print()
 !mona compare -f C:\mona\oscp\bytearray.bin -a [ESP-ADDRESS]
 ```
 
-* Step 21: Remove first bad character in the list in Step 19 from payload variable in exploit.py
+* Step 21: Remove first bad character in the list generated in Step 20 from payload variable in exploit.py
 
 * Step 22: Reopen Application but do not run it
 
