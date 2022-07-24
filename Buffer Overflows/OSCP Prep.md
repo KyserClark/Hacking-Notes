@@ -145,7 +145,7 @@ print()
 
 #### Step 21: Remove first bad character in the list generated in Step 20 from payload variable in exploit.py
 
-#### Step 22: Re-open Application in Immunity but do not run the program
+#### Step 22: Re-open Application in Immunity but do NOT run the program
 
 #### Step 23: Generate byte array again in Immunity with same command as last time, but make sure you add the bad character to the exception list
 
@@ -154,7 +154,7 @@ Example:
 !mona bytearray -b "\x00\x07"
 ```
 
-#### Step 24: Repeat steps 18-21 until Step 19 says "Unmodified" in the Immunity logs (These are the bad characters)
+#### Step 24: Repeat steps 19-23 until Step 20 says "Unmodified" in the Immunity logs (Charaters in the exeption list of bytearray are the bad characters)
 
 #### Step 25: In crashed or running state, find jump point in Immunity with this command:
 
