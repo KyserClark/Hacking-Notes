@@ -103,6 +103,8 @@ except:
  ```
  *PATTERN-LENGTH is the same as PATTERN-LENGTH from Step 6*
  
+     * Look for a line in the output that states: EIP contains normal pattern : ... (offset XXXX)
+ 
 
 * Step 10: Set offset variable of exploit.py as the offset found in Step 9
  
