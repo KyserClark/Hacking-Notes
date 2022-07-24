@@ -145,7 +145,7 @@ print()
 
 #### Step 21: Remove first bad character in the list generated in Step 20 from payload variable in exploit.py
 
-#### Step 22: Reopen Application in Immunity but do not run the program
+#### Step 22: Re-open Application in Immunity but do not run the program
 
 #### Step 23: Generate byte array again in Immunity with same command as last time, but make sure you add the bad character to the exception list
 
