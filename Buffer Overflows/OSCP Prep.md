@@ -101,7 +101,9 @@ except:
  ```
  !mona findmsp -distance [PATTERN-LENGTH]
  ```
+ *PATTERN-LENGTH is the same as PATTERN-LENGTH from Step 6*
  
+
 * Step 10: Paste offset amount into the offset variable of exploit.py
  
 * Step 11: Set retn variable to "BBBB" in exploit.py
