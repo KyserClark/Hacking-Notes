@@ -104,7 +104,7 @@ except:
  *PATTERN-LENGTH is the same as PATTERN-LENGTH from Step 6*
  
 
-* Step 10: Paste offset amount into the offset variable of exploit.py
+* Step 10: Set offset variable of exploit.py as the offset found in Step 9
  
 * Step 11: Set retn variable to "BBBB" in exploit.py
  
