@@ -92,6 +92,7 @@ except:
 ```
 *Make PATTERN-LENGTH 400 bytes longer than the string that crashed the application while fuzzing*
 
+* Step 7: Paste output from Step 6 into payload variable of exploit.py
   
 * Step 8: Restart application in Immunity, Run exploit.py from attack machine
  
