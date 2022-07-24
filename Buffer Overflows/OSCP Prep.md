@@ -160,6 +160,7 @@ Example:
 ```
 !mona jmp -r esp -cpb "[BAD-CHARACTERS]"
 ```
+*Most likley, no output will be generated. View Logs in Immunity to see jump point*
 
 * Step 26: Write jump point address discovered backwards into the retn variable of exploit.py
 
