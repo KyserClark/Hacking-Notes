@@ -107,6 +107,8 @@ except:
 * Step 10: Set offset variable of exploit.py as the offset found in Step 9
  
 * Step 11: Set retn variable to "BBBB" in exploit.py
+
+* Step 12: Restart application in Immunity; Run exploit.py
   
 * Step 13: Ensure EIP is under control (EIP should have: 42424242)
  
