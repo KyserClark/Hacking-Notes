@@ -2,7 +2,7 @@
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
-Note: Bracket charactors themselves [ ] require removal. See examples.
+Note: Bracket characters themselves [ ] require removal. See examples.
 *********************************************************************************
 
 ### When wget is not available/usable on a Windows machine use this command to pull files from an http server:
