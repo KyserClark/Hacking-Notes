@@ -158,7 +158,7 @@ Example:
 * Step 25: In crashed or running state, find jump point in Immunity with this command:
 
 ```
-!mona jmp -r esp -cpb [BAD-CHARACTERS]
+!mona jmp -r esp -cpb "[BAD-CHARACTERS]"
 ```
 
 * Step 26: Write jump point address discovered backwards into the retn variable of exploit.py
