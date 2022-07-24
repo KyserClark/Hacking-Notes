@@ -7,7 +7,7 @@ Note: Bracket characters themselves [ ] require removal. See examples.
 
 #### Step 1: Ensure Mona is installed in Immunity Debugger
 
-#### Step 2: Launch Immunity Debugger, open relevant application, and run the application
+#### Step 2: Launch Immunity Debugger, open relevant application, and run the program with the red play button
 
 #### Step 3: Configure working folder with this command at the bottom of Immunity Debugger:
 
@@ -94,7 +94,7 @@ except:
 
 #### Step 7: Paste output from Step 6 into payload variable of exploit.py
   
-#### Step 8: Restart application in Immunity, Run exploit.py from attack machine
+#### Step 8: Restart application and run the program in Immunity, Run exploit.py from attack machine
  
 #### Step 9: After exploit.py crashes the application, run this command in Immunity to determine offset:
  
@@ -109,7 +109,7 @@ except:
  
 #### Step 11: Set retn variable to "BBBB" in exploit.py
 
-#### Step 12: Restart application in Immunity; Run exploit.py
+#### Step 12: Restart application and run the program in Immunity; Run exploit.py
   
 #### Step 13: Ensure EIP is under control (EIP should have: 42424242)
  
@@ -127,7 +127,7 @@ print()
 
 #### Step 16: Paste Bad Characters output into payload variable of exploit.py
 
-#### Step 17: Re-open application in Immunity but do not run it
+#### Step 17: Re-open application in Immunity but do NOT run the program
 
 #### Step 18: Generate byte array in Immunity with this command:
 
@@ -135,7 +135,7 @@ print()
 !mona bytearray -b "\x00"
 ```
 
-#### Step 19: Start application in Immunity; Run exploit.py on attack machine
+#### Step 19: Run the program in Immunity; Run exploit.py on attack machine
 
 #### Step 20: Compare byte array with this command in Immunity to see possible bad characters:
 
@@ -145,7 +145,7 @@ print()
 
 #### Step 21: Remove first bad character in the list generated in Step 20 from payload variable in exploit.py
 
-#### Step 22: Reopen Application but do not run it
+#### Step 22: Reopen Application in Immunity but do not run the program
 
 #### Step 23: Generate byte array again in Immunity with same command as last time, but make sure you add the bad character to the exception list
 
@@ -195,6 +195,8 @@ nc -lnvp 4444
 #### Step 31: Restart application in Immunity, Run it, and run exploit.py from attack machine
 
 #### Step 32: Check listener, it should have a shell
+
+
 
 ## Reference
 
