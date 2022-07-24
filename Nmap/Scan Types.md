@@ -31,7 +31,7 @@
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
-Note: Bracket charactors themselves [ ] require removal. See examples.
+Note: Bracket characters themselves [ ] require removal. See examples.
 *********************************************************************************
 
 ## Nmap Live Host Discovery
