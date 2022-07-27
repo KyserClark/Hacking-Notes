@@ -55,7 +55,7 @@ while True:
   ```
   
 #### Step 5: Create exploit.py skeleton:
-*Most likley, the examples provided will have to be motified in some way since every program is different*
+*Most likley, the examples provided will have to be modified in some way since every program is different*
  
 exploit.py Example 1:
  
