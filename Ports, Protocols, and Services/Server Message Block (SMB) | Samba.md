@@ -22,11 +22,15 @@ smbclient //[TARGET-IP]/[SHARE-NAME]
 ```
 smbclient -U [USERNAME]//[TARGET-IP]/[SHARE-NAME]
 ```
+```
+smbclient //[TARGET-IP]/[SHARE-NAME]
+```
+
 
 ### Recursively Download SMB Share:
 (Submit username and password as nothing if the share is not secured)
 ```
-smbget -R smb://[SMB-SERVER-IP]/[SHARE-NAME]
+smbget -R smb://[TARGET-IP]/[SHARE-NAME]
 ```
 
 ### Enumerate Specific Share to See Mounts: 
