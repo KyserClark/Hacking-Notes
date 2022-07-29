@@ -5,4 +5,5 @@ This repository will never be finished and will be continuously updated througho
 
 ### Credits
 * TryHackMe
+* TryHackMe Room Developers
 * TryHackMe Walkthrough Authors
