@@ -53,9 +53,9 @@ while True:
   string += 100 * "A"
   time.sleep(1)
   ```
-Example Python 2 Code for Fuzzing:
+Example Python2 Code for Fuzzing:
 ```
-  import socket, time, sys
+import socket, time, sys
 
 ip = "10.9.0.78"
 port = 31337
