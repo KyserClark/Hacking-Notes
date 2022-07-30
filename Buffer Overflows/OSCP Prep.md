@@ -55,6 +55,8 @@ while True:
   ```
 Example Python2 Code for Fuzzing:
 ```
+# Credit: pencer.io (https://pencer.io/ctf/ctf-thm-gatekeeper/)
+
 import socket, time, sys
 
 ip = "10.9.0.78"
