@@ -42,7 +42,7 @@ Staged payloads are denoted with another forward slash /
 ```
 shell/reverse_tcp
 ```
-This rule applies to Meterpreter payloads
+*This rule applies to Meterpreter payloads*
 Windows 64bit staged Meterpreter payload Example:
 ```
 windows/x64/meterpreter/reverse_tcp
