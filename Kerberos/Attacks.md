@@ -173,5 +173,5 @@ net use c:\\DOMAIN-CONTROLLER\admin$ /user:Administrator mimikatz
 ```
 *********************************************************************************
 ## References
-https://tryhackme.com/room/attackingkerberos#
-https://tryhackme.com/room/attacktivedirectory
+* https://tryhackme.com/room/attackingkerberos#
+* https://tryhackme.com/room/attacktivedirectory
