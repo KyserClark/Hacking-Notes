@@ -199,6 +199,10 @@ find / -name gcc*
 ```
 find / -perm -u=s -type f 2>/dev/null
 ```
+* List Files with SUID or SGID Bits Set
+```
+find / -type f -perm -04000 -ls 2>/dev/null
+```
 
 *********************************************************************************
 
@@ -209,3 +213,12 @@ find / -perm -u=s -type f 2>/dev/null
 ./[FILE] -p
 ```
 
+### Unshadow
+```
+unshadow passwd.txt shadow.txt > passwords.txt
+```
+
+*********************************************************************************
+
+## Reference
+* https://tryhackme.com/room/linprivesc
