@@ -10,6 +10,7 @@
    * [General Overview of User Privilege Level and Group Memberships](#general-overview-of-user-privilege-level-and-group-memberships)
    * [Connections Information](#connections-information)
    * [Find Command](#find-command)
+   * [Get Capabilities](#get-capabilities)
 
 * [Other](#other)
    * [Execute Binary as Owner](#execute-binary-as-owner)
@@ -203,6 +204,10 @@ find / -perm -u=s -type f 2>/dev/null
 * List Files with SUID or SGID Bits Set
 ```
 find / -type f -perm -04000 -ls 2>/dev/null
+```
+* Get Capabilities
+```
+getcap -r / > /dev/null
 ```
 
 *********************************************************************************
