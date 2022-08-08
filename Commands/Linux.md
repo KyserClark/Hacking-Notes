@@ -183,6 +183,13 @@ find / -perm -222 -type d 2>/dev/null
 ```
 find / -perm -o w -type d 2>/dev/null
 ```
+```
+find / -writable 2>/dev/null | cut -d "/" -f 2 | sort -u
+```
+```
+find / -writable 2>/dev/null | cut -d "/" -f 2,3 | grep -v proc | sort -u
+```
+
 * Find World-Executable Folders
 ```
 find / -perm -o x -type d 2>/dev/null
