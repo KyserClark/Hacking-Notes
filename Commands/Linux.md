@@ -13,6 +13,7 @@
 
 * [Other](#other)
    * [Execute Binary as Owner](#execute-binary-as-owner)
+   * [Unshadow](#unshadow)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
