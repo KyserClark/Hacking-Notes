@@ -207,7 +207,7 @@ find / -type f -perm -04000 -ls 2>/dev/null
 ```
 ### Get Capabilities
 ```
-getcap -r / > /dev/null
+getcap -r / 2>/dev/null
 ```
 
 *********************************************************************************
