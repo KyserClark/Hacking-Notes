@@ -63,7 +63,7 @@ Search for writable directories:
 ```
 find / -writable 2>/dev/null | cut -d "/" -f 2,3 | grep -v proc | sort -u
 ```
-To make a writable directory under $PATH
+To make a writable directory under $PATH:
 ```
 export PATH=/tmp:$PATH
 ```
