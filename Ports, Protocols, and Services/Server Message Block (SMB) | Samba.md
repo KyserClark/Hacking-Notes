@@ -41,3 +41,9 @@ mget [FILE-NAME]
 ```
 nmap -p [PORT] --script=nfs-ls,nfs-statfs,nfs-showmount [TARGET-IP]
 ```
+
+### Check for Known Vulnerabilities within an SMB Share:
+```
+nmap -p [PORT] --script smb-vuln* [TARGET-IP]
+```
+
