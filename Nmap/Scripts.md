@@ -31,7 +31,7 @@ nmap -p 139 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.128.86
 ```
 nmap -p [PORT] --script smb-vuln* [TARGET-IP]
 ```
-Example: s
+Example:
 ```
 nmap -p 139, 445 --script smb-vuln* 10.10.75.145
 ```
