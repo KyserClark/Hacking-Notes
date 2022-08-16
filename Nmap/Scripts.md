@@ -2,6 +2,7 @@
 
 * [Enumerate SMB Shares](#enumerate-smb-shares)
 * [Show SMB Mounts](#show-smb-mounts)
+* [Check for Known Vulnerabilities within an SMB Share](#check-for-known-vulnerabilities-within-an-smb-share)
 
 *************************************************************************************************************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -26,7 +27,7 @@ Example:
 nmap -p 139 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.128.86
 ```
 ***************************************************************************
-## Check for Known Vulnerabilities within an SMB Share:
+## Check for Known Vulnerabilities within an SMB Share
 ```
 nmap -p [PORT] --script smb-vuln* [TARGET-IP]
 ```
