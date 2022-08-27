@@ -25,6 +25,11 @@ find / -perm -u=s -type f 2>/dev/null
 getcap -r / 2>/dev/null
 ```
 **************************************
+## Check Cron Jobs
+```
+cat /etc/crontab
+```
+**************************************
 ## Leverage LD_PRELOAD
 
 Check for LD_PRELOAD (with env_keep option)
