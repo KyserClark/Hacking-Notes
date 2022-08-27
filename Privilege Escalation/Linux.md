@@ -5,6 +5,22 @@ Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.
 Note: Bracket characters themselves [ ] require removal. See examples.
 *********************************************************************************
 
+## Check for Kernel Exploits
+
+```
+uname -r
+```
+**************************************
+## Check for SUID or SGID Bits Set
+```
+find / -type f -perm -04000 -ls 2>/dev/null
+```
+**************************************
+## Check Capabilities
+```
+getcap -r / 2>/dev/null
+```
+**************************************
 ## Leverage LD_PRELOAD
 
 Check for LD_PRELOAD (with env_keep option)
