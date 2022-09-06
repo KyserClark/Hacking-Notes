@@ -15,6 +15,7 @@
 * [Other](#other)
    * [Execute Binary as Owner](#execute-binary-as-owner)
    * [Unshadow](#unshadow)
+   * [xfreerdp](#xfreerdp)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -119,7 +120,7 @@ netstat -ano
 ### Find Command
 * Find File by Name on Entire System
 ```
-find / -name [file-name] 2>/dev/null
+find / -name [FILE-NAME] 2>/dev/null
 ```
 * Find the File Named “flag1.txt” in the Current Directory
 ```
@@ -231,7 +232,12 @@ getcap -r / 2>/dev/null
 unshadow passwd.txt shadow.txt > passwords.txt
 ```
 
+### xfreerdp
+```
+xfreerdp /v:[IP-ADDRESS] /u:[USERNAME] /p:[PASSWORD] /cert:ignore
+```
+
 *********************************************************************************
 
-## Reference
+## References
 * https://tryhackme.com/room/linprivesc
