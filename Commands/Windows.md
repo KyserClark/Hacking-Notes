@@ -12,3 +12,7 @@ Force password reset on next login:
 ```
 Set-ADUser -ChangePasswordAtLogon $true -Identity [USERNAME] -Verbose
 ```
+Force group policy update:
+```
+gpupdate /force
+```
