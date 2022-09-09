@@ -20,4 +20,4 @@ def password_spray(self, password, url):
             if (response.status_code == self.HTTP_AUTH_FAILED_CODE):
                 print ("[-] Failed login with Username: " + user)
     print ("[*] Password spray attack completed, " + str(count) + " valid credential pairs found")
-    ```
+```
