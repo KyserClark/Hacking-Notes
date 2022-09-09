@@ -2,6 +2,7 @@
 
 Credit: https://tryhackme.com/room/breachingad
 
+(Python)
 ```
 def password_spray(self, password, url):
     print ("[*] Starting passwords spray attack using the following password: " + password)
