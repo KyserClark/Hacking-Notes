@@ -1,7 +1,7 @@
-# Scripts
+# Password Spraying Attack
 
-## Password Spraying Attack
 Credit: https://tryhackme.com/room/breachingad
+
 ```
 def password_spray(self, password, url):
     print ("[*] Starting passwords spray attack using the following password: " + password)
