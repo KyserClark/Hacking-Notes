@@ -1,6 +1,6 @@
 # Windows Privilege Escalation
 
-* [Unattended Windows Installations](#unattended-windowsinstallations)
+* [Unattended Windows Installations](#unattended-windows-installations)
 * [Powershell History](#powershell-history)
 * [Saved Windows Credentials](#saved-windows-credentials)
 * [Internet Information Services Configuration](#internet-information-services-configuration)
