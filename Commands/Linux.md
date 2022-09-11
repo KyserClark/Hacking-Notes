@@ -17,6 +17,8 @@
    * [Unshadow](#unshadow)
    * [xfreerdp](#xfreerdp)
 
+* [Host Rogue LDAP Server](#host-rogue-ldap-server)
+
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
 Note: Bracket characters themselves [ ] require removal. See examples.
