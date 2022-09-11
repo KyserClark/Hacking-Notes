@@ -4,7 +4,7 @@
 * [Powershell History](#powershell-history)
 * [Saved Windows Credentials](#saved-windows-credentials)
 * [Internet Information Services Configuration](#internet-information-services-configuration)
-* [Retrieve Credentials from Software: PuTTY](#retrieve-credentials-from-software:-putty)
+* [Retrieve Credentials from PuTTY](#retrieve-credentials-from-putty)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -65,7 +65,7 @@ type C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr
 
 ********************************************
 
-## Retrieve Credentials from Software: PuTTY
+## Retrieve Credentials from PuTTY
 
 Search under the following registry key for ProxyPassword:
 ```
