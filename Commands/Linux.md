@@ -12,12 +12,14 @@
    * [Find Command](#find-command)
    * [Get Capabilities](#get-capabilities)
 
+* [Host Rogue LDAP Server](#host-rogue-ldap-server)
+
 * [Other](#other)
    * [Execute Binary as Owner](#execute-binary-as-owner)
    * [Unshadow](#unshadow)
    * [xfreerdp](#xfreerdp)
 
-* [Host Rogue LDAP Server](#host-rogue-ldap-server)
+
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -222,25 +224,6 @@ getcap -r / 2>/dev/null
 
 *********************************************************************************
 
-## Other
-
-### Execute Binary as Owner:
-```
-./[FILE] -p
-```
-
-### Unshadow
-```
-unshadow passwd.txt shadow.txt > passwords.txt
-```
-
-### xfreerdp
-```
-xfreerdp /v:[IP-ADDRESS] /u:[USERNAME] /p:[PASSWORD] /cert:ignore
-```
-
-*********************************************************************************
-
 ## Host Rogue LDAP Server
 
 1st:
@@ -273,6 +256,25 @@ supportedSASLMechanisms: PLAIN
 supportedSASLMechanisms: LOGIN
 ```
 Credit: https://tryhackme.com/room/breachingad
+
+*********************************************************************************
+
+## Other
+
+### Execute Binary as Owner:
+```
+./[FILE] -p
+```
+
+### Unshadow
+```
+unshadow passwd.txt shadow.txt > passwords.txt
+```
+
+### xfreerdp
+```
+xfreerdp /v:[IP-ADDRESS] /u:[USERNAME] /p:[PASSWORD] /cert:ignore
+```
 
 *********************************************************************************
 
