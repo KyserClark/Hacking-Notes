@@ -1,7 +1,7 @@
 # Windows Commands
 
 * [Active Directory](#active-directory)
-* [Microsoft Deployment Toolkit](#microsoft-deployment-tookkit)
+* [Microsoft Deployment Toolkit](#microsoft-deployment-toolkit)
 
 
 ## Active Directory
