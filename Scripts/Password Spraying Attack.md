@@ -77,3 +77,8 @@ def main(argv):
 if __name__ == "__main__":
     main(sys.argv[1:])
 ```
+
+Command to use script:
+```
+python ntlm_passwordspray.py -u [USER-FILE] -f [FQDN] -p [PASSWORD] -a [TARGET-URL]
+```
