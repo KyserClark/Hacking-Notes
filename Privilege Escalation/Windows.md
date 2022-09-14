@@ -8,6 +8,7 @@
 * [Scheduled Tasks](#scheduled-tasks)
 * [AlwaysInstallElevated](#alwaysinstallelevated)
 * [Insecure Permissions on Service Executable](#insecure-permissions-on-service-executable)
+* [Unquoted Service Paths](#unquoted-service-paths)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -147,6 +148,12 @@ sc start [SERVICE-NAME]
 ```
 * There should be a shell on the attack machine
 * Note: PowerShell has "sc" as an alias to "Set-Content", therefore you need to use "sc.exe" in order to control services with PowerShell this way.
+
+********************************************
+
+## Unquoted Service Paths
+
+If there is is a program installed on the machine in a folder that is world writable (not "Program Files" or "x86 Program Files"), and it has spaces and not quoted when running "sc.exe qc [PROGRAM-FILE-PATH]" , you can create a malicious payload under a new executable with a shorter name and it will run when the longer name program runs. For example: if there is a program called "Disk Shorter.exe" (unquoted), you can create a new executable called "Disk.exe" and it will run when "Disk Shorter.exe" is called. 
 
 ********************************************
 
