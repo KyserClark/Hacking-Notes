@@ -10,9 +10,9 @@
 * [Insecure Permissions on Service Executable](#insecure-permissions-on-service-executable)
 * [Unquoted Service Paths](#unquoted-service-paths)
 * [Insecure Service Permissions](#insecure-service-permissions)
-* [SeBackup & SeRestore](#sebackup-&-serestore)
+* [SeBackup and SeRestore](#sebackup-and-serestore)
 * [SeTakeOwnership](#setakeownership)
-* [Tools of the Trade](#toolsofthetrade)
+* [Tools of the Trade](#tools-of-thetrade)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
