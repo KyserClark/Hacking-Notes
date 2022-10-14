@@ -12,7 +12,7 @@
 * [Insecure Service Permissions](#insecure-service-permissions)
 * [SeBackup and SeRestore](#sebackup-and-serestore)
 * [SeTakeOwnership](#setakeownership)
-* [Tools of the Trade](#tools-of-thetrade)
+* [Tools of the Trade](#tools-of-the-trade)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -190,7 +190,7 @@ sc start [VULNERABLE-SERVICE]
 
 ********************************************
 
-## SeBackup & SeRestore
+## SeBackup and SeRestore
 
 * Check priviliges with this command:
 ```
