@@ -17,6 +17,28 @@ Force group policy update:
 ```
 gpupdate /force
 ```
+List all users in the AD domain:
+```
+net user /domain
+```
+List info on a specific user:
+```
+net user [USERNAME] /domain
+```
+List Groups in the AD domain:
+```
+net group /domain
+```
+List info on a specific group:
+```
+net group "[GROUP-NAME]" /domain
+```
+Enumerate password policy:
+```
+net accounts /domain
+```
+More info about the net command can be found here: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/net-commands-on-operating-systems
+
 ************************************
 ## Microsoft Deployment Toolkit
 
@@ -53,3 +75,4 @@ Get-FindCredentials -WimFile pxeboot.wim
 
 ## References
 * https://tryhackme.com/room/breachingad
+* https://tryhackme.com/room/adenumeration
