@@ -9,6 +9,11 @@ Set password:
 ```
 Set-ADAccountPassword [USERNAME] -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose
 ```
+Another way:
+```
+Set-ADAccountPassword -Identity [USERNAME] -Server [DOMAIN] -OldPassword (ConvertTo-SecureString -AsPlaintext "old" -force) -NewPassword (ConvertTo-SecureString -AsPlainText "new" -Force)
+```
+
 Force password reset on next login:
 ```
 Set-ADUser -ChangePasswordAtLogon $true -Identity [USERNAME] -Verbose
@@ -37,7 +42,52 @@ Enumerate password policy:
 ```
 net accounts /domain
 ```
-More info about the net command can be found here: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/net-commands-on-operating-systems
+Enumerate AD Users:
+```
+Get-ADUser -Identity [USERNAME] -Server [DOMAIN] -Properties *
+```
+Example:
+```
+Get-ADUser -Identity gordon.stevens -Server za.tryhackme.com -Properties *
+```
+Pretty Output:
+```
+Get-ADUser -Filter 'Name -like "*stevens"' -Server za.tryhackme.com | Format-Table Name,SamAccountName -A
+```
+Enumerate AD Groups:
+```
+Get-ADGroup -Identity [GROUP-NAME] -Server [DOMAIN]
+```
+Example:
+```
+Get-ADGroup -Identity Administrators -Server za.tryhackme.com
+```
+Enumerate group membership:
+```
+Get-ADGroupMember -Identity [GROUP-NAME] -Server [DOMAIN]
+```
+Example:
+```
+Get-ADGroupMember -Identity Administrators -Server za.tryhackme.com
+```
+Generic search for AD objects:
+```
+Get-ADObject [OPTIONS]
+```
+Example:
+```
+Get-ADObject -Filter 'whenChanged -gt $ChangeDate' -includeDeletedObjects -Server za.tryhackme.com
+```
+Enumerate accounts that have a bad password count greater than 0:
+```
+Get-ADObject -Filter 'badPwdCount -gt 0' -Server [DOMAIN]
+```
+Get info about a specific domain:
+```
+Get-ADDomain -Server [DOMAIN]
+```
+* More info about the net command can be found here: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/net-commands-on-operating-systems
+* More info about cmdlets can be found here: https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps
 
 ************************************
 ## Microsoft Deployment Toolkit
