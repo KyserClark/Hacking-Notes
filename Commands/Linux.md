@@ -275,6 +275,13 @@ unshadow passwd.txt shadow.txt > passwords.txt
 ```
 xfreerdp /v:[IP-ADDRESS] /u:[USERNAME] /p:[PASSWORD] /cert:ignore
 ```
+```
+xfreerdp /d:[DOMAIN] /u:[USERNAME]  /p:[PASSWORD] /v:[SERVER-NAME]
+```
+Example:
+```
+xfreerdp /d:za.tryhackme.com /u:joel.pearce  /p:E3IIDNiiT96 /v:thmjmp1.za.tryhackme.com
+```
 
 *********************************************************************************
 
