@@ -19,7 +19,7 @@
    * [Unshadow](#unshadow)
    * [xfreerdp](#xfreerdp)
    * [Connect via psexec using Pass the Hash](#connect-via-psexec-using-pass-the-hash)
-   * [Connect to WinRM using PtH](#connec-to-winrm-using-pth)
+   * [Connect to WinRM using PtH](#connect-to-winrm-using-pth)
 
 
 
@@ -296,7 +296,7 @@ psexec.py -hashes [NTLM-HASH] [DOMAIN]/[USERNAME]@[TARGET-IP]
 
 ### Connect to WinRM using PtH
 ```
-evil-winrm -i TARGET-IP -u [USERNAME] -H [NTLM-HASH]
+evil-winrm -i [TARGET-IP] -u [USERNAME] -H [NTLM-HASH]
 ```
 
 *********************************************************************************
