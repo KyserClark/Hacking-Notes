@@ -28,7 +28,7 @@ sekurlsa::pth /user:bob.jenkins /domain:za.tryhackme.com /ntlm:6b4a57f67805a663c
 ```
 Notice we used token::revert to reestablish our original token privileges, as trying to pass-the-hash with an elevated token won't work. This would be the equivalent of using runas /netonly but with a hash instead of a password and will spawn a new reverse shell from where we can launch any command as the victim user. Interestingly, if you run the whoami command on this shell, it will still show you the original user you were using before doing PtH, but any command run from here will actually use the credentials we injected using PtH.
 
-############################################
+**********************************************************************
 
 ## Reference
 
