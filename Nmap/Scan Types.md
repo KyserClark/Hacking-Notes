@@ -36,7 +36,7 @@ Note: Bracket characters themselves [ ] require removal. See examples.
 
 ## Nmap Live Host Discovery
 
-### Simple Network Scan
+### Ping Scan
 ```
 sudo nmap -sn [NETWORK-IP]/[CIDR-NOTATION]
 ```
