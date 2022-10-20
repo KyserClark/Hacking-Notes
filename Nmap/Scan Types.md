@@ -36,6 +36,15 @@ Note: Bracket characters themselves [ ] require removal. See examples.
 
 ## Nmap Live Host Discovery
 
+### Simple Network Scan
+```
+sudo nmap -sn [NETWORK-IP]/[CIDR-NOTATION]
+```
+Example:
+```
+sudo nmap -sn 10.10.86.0/24
+```
+
 ### ARP Scan
 ```
 sudo nmap -PR -sn [NETWORK-IP]/[CIDR-NOTATION]
