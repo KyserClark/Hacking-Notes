@@ -18,8 +18,8 @@
    * [Execute Binary as Owner](#execute-binary-as-owner)
    * [Unshadow](#unshadow)
    * [xfreerdp](#xfreerdp)
-   * [Connect via psexec using Pass the Hash](connect-via-psexec-using-pass-the-hash)
-   * [Connect to WinRM using PtH](connect-to-wintm-using-pth)
+   * [Connect via psexec using Pass the Hash](#connect-via-psexec-using-pass-the-hash)
+   * [Connect to WinRM using PtH](#connect-to-wintm-using-pth)
 
 
 
