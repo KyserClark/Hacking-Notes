@@ -13,7 +13,14 @@ Another way:
 ```
 Set-ADAccountPassword -Identity [USERNAME] -Server [DOMAIN] -OldPassword (ConvertTo-SecureString -AsPlaintext "old" -force) -NewPassword (ConvertTo-SecureString -AsPlainText "new" -Force)
 ```
-
+And Another way:
+```
+$Password = ConvertTo-SecureString "[PASSWORD]" -AsPlainText -Force
+```
+```
+Set-ADAccountPassword -Identity "[USERNAME]" -Reset -NewPassword $Password
+```
+  
 Force password reset on next login:
 ```
 Set-ADUser -ChangePasswordAtLogon $true -Identity [USERNAME] -Verbose
@@ -28,7 +35,7 @@ net user /domain
 ```
 List info on a specific user:
 ```
-net user [USERNAME] /domain
+net user "[USERNAME]" /domain
 ```
 List Groups in the AD domain:
 ```
