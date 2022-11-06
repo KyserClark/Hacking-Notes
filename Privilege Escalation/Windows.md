@@ -13,6 +13,7 @@
 * [SeBackup and SeRestore](#sebackup-and-serestore)
 * [SeTakeOwnership](#setakeownership)
 * [Tools of the Trade](#tools-of-the-trade)
+* [Look for the "password" Keyword in the Registry](#look-for-the-"password"-keyword-in-the-registry)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -39,6 +40,10 @@ type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\Conso
 From PowerShell:
 ```
 type $Env:userprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+```
+PowerShell Command History File Location:
+```
+C:\Users\[USER]\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
 ```
 
 ********************************************
@@ -260,6 +265,16 @@ To trigger utilman, lock the screen from the start button and proceed to click o
    * If you already have a Meterpreter shell on the target system, you can use the "multi/recon/local_exploit_suggester" module to list vulnerabilities that may affect the target system and allow you to elevate your privileges on the target system.
 
 ********************************************
+
+## Look for the "password" Keyword in the Registry
+
+```
+c:\Users\[USER]> reg query HKLM /f password /t REG_SZ /s
+```
+OR
+```
+C:\Users\[USER]> reg query HKCU /f password /t REG_SZ /s
+```
 
 ### Reference:
 * https://tryhackme.com/room/windowsprivesc20
