@@ -61,6 +61,10 @@ Pretty Output:
 ```
 Get-ADUser -Filter 'Name -like "*stevens"' -Server za.tryhackme.com | Format-Table Name,SamAccountName -A
 ```
+Another Way:
+```
+Get-ADUser -Filter * -Properties * | select Name,SamAccountName,Description
+```
 Enumerate AD Groups:
 ```
 Get-ADGroup -Identity [GROUP-NAME] -Server [DOMAIN]
