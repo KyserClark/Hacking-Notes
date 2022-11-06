@@ -13,7 +13,7 @@
 * [SeBackup and SeRestore](#sebackup-and-serestore)
 * [SeTakeOwnership](#setakeownership)
 * [Tools of the Trade](#tools-of-the-trade)
-* [Look for the "password" Keyword in the Registry](#look-for-the-"password"-keyword-in-the-registry)
+* [Look for the password Keyword in the Registry](#look-for-the-password-keyword-in-the-registry)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -266,7 +266,7 @@ To trigger utilman, lock the screen from the start button and proceed to click o
 
 ********************************************
 
-## Look for the "password" Keyword in the Registry
+## Look for the password Keyword in the Registry
 
 ```
 c:\Users\[USER]> reg query HKLM /f password /t REG_SZ /s
