@@ -24,3 +24,8 @@ Get-NetTCPConnection | Where-Object -Property State -Match Listen
 ```
 Get-Hotfix
 ```
+
+* List backup files:
+```
+Get-ChildItem -Path C:\ -Include *.bak* -File -Recurse -ErrorAction SilentlyContinue
+```
