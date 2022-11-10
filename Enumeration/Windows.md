@@ -9,3 +9,7 @@ Get-LocalUser
 ```
 Get-LocalUser | Where-Object -Property PasswordRequired -Match false
 ```
+* List local machine groups:
+```
+Get-LocalGroup
+```
