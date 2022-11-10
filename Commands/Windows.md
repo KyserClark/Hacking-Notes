@@ -2,6 +2,7 @@
 
 * [Active Directory](#active-directory)
 * [Microsoft Deployment Toolkit](#microsoft-deployment-toolkit)
+* [PowerShell](#powershell)
 
 
 ## Active Directory
@@ -133,7 +134,22 @@ Get-FindCredentials -WimFile pxeboot.wim
 * Credit: https://tryhackme.com/room/breachingad
 
 ************************************
+## PowerShell
+
+Find location of a file:
+```
+Get-ChildItem -Path C:\ -Include *[FILENAME]* -File -Recurse -ErrorAction SilentlyContinue
+```
+Example:
+```
+Get-ChildItem -Path C:\ -Include *interesting-file.txt* -File -Recurse -ErrorAction SilentlyContinue
+```
+
+
+************************************
+
 
 ## References
 * https://tryhackme.com/room/breachingad
 * https://tryhackme.com/room/adenumeration
+* https://tryhackme.com/room/powershell
