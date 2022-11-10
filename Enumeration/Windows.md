@@ -14,3 +14,8 @@ Get-LocalUser | Where-Object -Property PasswordRequired -Match false
 ```
 Get-LocalGroup
 ```
+
+* List Listening Ports:
+```
+Get-NetTCPConnection | Where-Object -Property State -Match Listen
+```
