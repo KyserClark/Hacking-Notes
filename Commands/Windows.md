@@ -152,6 +152,14 @@ Example:
 ```
 Get-FileHash -Path "C:\Program Files\interesting-file.txt.txt" -Algorithm MD5
 ```
+Base64 decode a file:
+```
+certutil -decode "[FILE-PATH]" [OUTPUT-FILE]
+```
+Example:
+```
+certutil -decode "C:\Users\Administrator\Desktop\b64.txt" output.txt
+```
 
 
 ************************************
