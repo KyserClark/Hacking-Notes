@@ -188,6 +188,10 @@ List recent updates on the system:
 ```
 Get-Hotfix
 ```
+List backup files:
+```
+Get-ChildItem -Path C:\ -Include *.bak* -File -Recurse -ErrorAction SilentlyContinue
+```
 
 ************************************
 
