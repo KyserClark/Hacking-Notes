@@ -180,6 +180,10 @@ Get IP Address:
 ```
 Get-NetIPAddress
 ```
+List listening ports:
+```
+Get-NetTCPConnection | Where-Object -Property State -Match Listen
+```
 
 ************************************
 
