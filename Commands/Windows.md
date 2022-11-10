@@ -164,7 +164,10 @@ Example:
 ```
 certutil -decode "C:\Users\Administrator\Desktop\b64.txt" output.txt
 ```
-
+Get users on local machine:
+```
+Get-LocalUser
+```
 
 ************************************
 
