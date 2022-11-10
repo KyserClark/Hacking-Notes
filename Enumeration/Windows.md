@@ -29,3 +29,9 @@ Get-Hotfix
 ```
 Get-ChildItem -Path C:\ -Include *.bak* -File -Recurse -ErrorAction SilentlyContinue
 ```
+
+* List files containing API_KEY: *WARNING: THIS PRODUCES A LOT OF OUTPUT AND TAKES A WHILE TO PROCESS*  
+* *The file path(s) will be listed at the end above the error output*
+```
+Get-ChildItem C:\* -Recurse | Select-String -pattern API_KEY
+```
