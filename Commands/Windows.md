@@ -136,6 +136,10 @@ Get-FindCredentials -WimFile pxeboot.wim
 ************************************
 ## PowerShell
 
+Get Service Names
+```
+powershell -c "Get-Service"
+```
 Find location of a file:
 ```
 Get-ChildItem -Path C:\ -Include *[FILENAME]* -File -Recurse -ErrorAction SilentlyContinue
