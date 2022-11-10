@@ -19,3 +19,8 @@ Get-LocalGroup
 ```
 Get-NetTCPConnection | Where-Object -Property State -Match Listen
 ```
+
+* List recent updates on the system:
+```
+Get-Hotfix
+```
