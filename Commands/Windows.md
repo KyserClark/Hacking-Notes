@@ -176,6 +176,10 @@ List local machine groups:
 ```
 Get-LocalGroup
 ```
+Get IP Address:
+```
+Get-NetIPAddress
+```
 
 ************************************
 
