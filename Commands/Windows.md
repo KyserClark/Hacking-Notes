@@ -144,6 +144,14 @@ Example:
 ```
 Get-ChildItem -Path C:\ -Include *interesting-file.txt* -File -Recurse -ErrorAction SilentlyContinue
 ```
+Get file hash:
+```
+Get-FileHash -Path "[FILE-PATH]" -Algorithm [ALGORITHM]
+```
+Example:
+```
+Get-FileHash -Path "C:\Program Files\interesting-file.txt.txt" -Algorithm MD5
+```
 
 
 ************************************
