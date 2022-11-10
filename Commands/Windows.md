@@ -184,6 +184,10 @@ List listening ports:
 ```
 Get-NetTCPConnection | Where-Object -Property State -Match Listen
 ```
+List recent updates on the system:
+```
+Get-Hotfix
+```
 
 ************************************
 
