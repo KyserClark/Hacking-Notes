@@ -39,3 +39,7 @@ Get-ChildItem C:\* -Recurse | Select-String -pattern API_KEY
 ```
 Get-Process
 ```
+* List ACL for file path:
+```
+Get-Acl [FILE-PATH]
+```
