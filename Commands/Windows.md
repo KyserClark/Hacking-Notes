@@ -197,6 +197,14 @@ List files containing API_KEY: *WARNING: THIS PRODUCES A LOT OF OUTPUT AND TAKES
 ```
 Get-ChildItem C:\* -Recurse | Select-String -pattern API_KEY
 ```
+List all running processes:
+```
+Get-Process
+```
+List ACL for file path:
+```
+Get-Acl [FILE-PATH]
+```
 
 ************************************
 
