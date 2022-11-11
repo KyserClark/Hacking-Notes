@@ -35,3 +35,7 @@ Get-ChildItem -Path C:\ -Include *.bak* -File -Recurse -ErrorAction SilentlyCont
 ```
 Get-ChildItem C:\* -Recurse | Select-String -pattern API_KEY
 ```
+* List all running processes:
+```
+Get-Process
+```
