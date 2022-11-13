@@ -3,6 +3,8 @@
 * [Enumerate SMB Shares](#enumerate-smb-shares)
 * [Show SMB Mounts](#show-smb-mounts)
 * [Check for Known Vulnerabilities within an SMB Share](#check-for-known-vulnerabilities-within-an-smb-share)
+* [Brute Force Domain](#brute-force-domain)
+* [Detect Web Application Firewall](#detect-web-application-firewall)
 
 *************************************************************************************************************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -43,4 +45,13 @@ nmap --script=dns-brute.nse [DOMAIN]
 Example:
 ```
 nmap --script=dns-brute.nse KyserClark.com
+```
+***************************************************************************
+## Detect Web Application Firewall
+```
+nmap --script=http-waf-detect.nse [DOMAIN]
+```
+Example:
+```
+nmap --script=http-waf-detect.nse KyserClark.com
 ```
