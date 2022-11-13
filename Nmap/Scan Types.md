@@ -225,6 +225,7 @@ Option                  | Description
 -O	                    | Detect OS
 --traceroute            | Run traceroute to target
 --script=SCRIPTS	      | Nmap scripts to run
+--script=vuln           | 
 -sC or --script=default | Run default scripts
 -A                      | Equivalent to -sV -O -sC --traceroute
 -oN                     | Save output in normal format
