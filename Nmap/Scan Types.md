@@ -228,6 +228,7 @@ Option                  | Description
 --traceroute            | Run traceroute to target
 --script=SCRIPTS	      | Nmap scripts to run
 --script=vuln           | 
+--script=dns-brute.nse  | Brute force domain
 -sC or --script=default | Run default scripts
 -A                      | Equivalent to -sV -O -sC --traceroute
 -oN                     | Save output in normal format
