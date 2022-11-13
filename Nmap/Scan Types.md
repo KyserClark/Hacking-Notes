@@ -134,6 +134,8 @@ Option                | Description
 -F                    | Top 100 common ports
 -r                    | Scan ports in consecutive order
 -Pn                   | Disable Host Discovery
+-n                    | Never do DNS resolution
+-R                    | Always resolve DNS (default)
 -T<0-5>               | -T0 being the slowest and -T5 the fastest
 --max-rate 50         | Rate <= 50 packets/sec
 --max-rate 15         | Rate >= 15 packets/sec
