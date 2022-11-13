@@ -219,22 +219,23 @@ Option                 | Description
 
 ### Post Scan Options
 
-Option                  | Description
------------------------ | -------------
--sV                     | Determine service/version info on open ports
--sV --version-light     | Try the most likely probes (2)
--sV --version-all       | Try all available probes (9)
--O	                    | Detect OS
---traceroute            | Run traceroute to target
---script=SCRIPTS	      | Nmap scripts to run
---script=vuln           | 
---script=dns-brute.nse  | Brute force domain
--sC or --script=default | Run default scripts
--A                      | Equivalent to -sV -O -sC --traceroute
--oN                     | Save output in normal format
--oG                     | Save output in grepable format
--oX                     | Save output in XML format
--oA                     | Save output in normal, XML and Grepable formats
+Option                       | Description
+---------------------------- | -------------
+-sV                          | Determine service/version info on open ports
+-sV --version-light          | Try the most likely probes (2)
+-sV --version-all            | Try all available probes (9)
+-O	                         | Detect OS
+--traceroute                 | Run traceroute to target
+--script=SCRIPTS	           | Nmap scripts to run
+--script=vuln                | 
+--script=http-waf-detect.nse | Detect web application firewalls
+--script=dns-brute.nse       | Brute force domain
+-sC or --script=default      | Run default scripts
+-A                           | Equivalent to -sV -O -sC --traceroute
+-oN                          | Save output in normal format
+-oG                          | Save output in grepable format
+-oX                          | Save output in XML format
+-oA                          | Save output in normal, XML and Grepable formats
 
 
 ## References
