@@ -35,3 +35,12 @@ Example:
 ```
 nmap -p 139, 445 --script smb-vuln* 10.10.75.145
 ```
+***************************************************************************
+## Brute Force Domain
+```
+nmap --script=dns-brute.nse [DOMAIN]
+```
+Example:
+```
+nmap --script=dns-brute.nse KyserClark.com
+```
