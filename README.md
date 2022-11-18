@@ -7,3 +7,5 @@ This repository will never be finished and will be continuously updated througho
 * TryHackMe
 * TryHackMe Room Developers
 * TryHackMe Walkthrough Authors
+* ITProTV CompTIA PenTest+ PT0-002 video course 
+* Chapple, M., & Seidl, D. (2022). CompTIA PenTest+ Study Guide: Exam PT0-002 (2nd ed.). Sybex.
