@@ -5,6 +5,7 @@
 * [Check for Known Vulnerabilities within an SMB Share](#check-for-known-vulnerabilities-within-an-smb-share)
 * [Brute Force Domain](#brute-force-domain)
 * [Detect Web Application Firewall](#detect-web-application-firewall)
+* [Resources](#resources)
 
 *************************************************************************************************************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
