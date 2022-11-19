@@ -242,6 +242,10 @@ Option                       | Description
 -oA                          | Save output in normal, XML and Grepable formats
                     
 
+## Resources
+* Practice
+   * scanme.nmap.org
+   * https;//information.rapid7.com/metasploitable-download.html
 
 ## References
 * https://tryhackme.com/room/nmap01
