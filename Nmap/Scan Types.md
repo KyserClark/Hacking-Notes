@@ -166,6 +166,7 @@ sudo nmap -sM [TARGET-IP]
 ```
 
 ### TCP ACK Scan
+Test to determine if the firewall is stateful or stateless; can not determine wheather a port is open or closed.
 ```
 sudo nmap -sA [TARGET-IP]
 ```
@@ -243,3 +244,4 @@ Option                       | Description
 * https://tryhackme.com/room/nmap02
 * https://tryhackme.com/room/nmap03
 * https://tryhackme.com/room/nmap04
+* Chapple, M., & Seidl, D. (2022). CompTIA PenTest+ Study Guide: Exam PT0-002 (2nd ed.). Sybex. (Chapter 3)
