@@ -57,5 +57,10 @@ Example:
 nmap --script=http-waf-detect.nse KyserClark.com
 ```
 ***************************************************************************
+## Certificate Enumeration and Inspection
+```
+nmap --script=ssl-cert.nse
+```
+***************************************************************************
 ## Resources
 https://nmap.org/nsedoc/index.html 
