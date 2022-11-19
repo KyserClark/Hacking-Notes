@@ -55,3 +55,6 @@ Example:
 ```
 nmap --script=http-waf-detect.nse KyserClark.com
 ```
+***************************************************************************
+## Resources
+https://nmap.org/nsedoc/index.html 
