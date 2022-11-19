@@ -244,6 +244,8 @@ Option                       | Description
                     
 
 ## Resources
+* Scripts
+   * https://nmap.org/nsedoc/index.html 
 * Practice
    * scanme.nmap.org
    * https://information.rapid7.com/metasploitable-download.html
