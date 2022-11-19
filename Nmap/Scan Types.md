@@ -245,7 +245,7 @@ Option                       | Description
 ## Resources
 * Practice
    * scanme.nmap.org
-   * https;//information.rapid7.com/metasploitable-download.html
+   * https://information.rapid7.com/metasploitable-download.html
 
 ## References
 * https://tryhackme.com/room/nmap01
