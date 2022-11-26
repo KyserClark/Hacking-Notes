@@ -1,4 +1,4 @@
-### Uncommon & Alternate Tools
+Alternate Tools
 
 * GoBuster - fast directory discovery tool
 * Socat - Similar, but different Netcat. Can create encrypted and more stable Shells
