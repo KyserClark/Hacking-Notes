@@ -1,5 +1,9 @@
 # Wireshark
 
+https://www.wireshark.org/docs/
+https://wiki.wireshark.org/SampleCaptures
+https://dfirmadness.com/case-001-pcap-analysis/
+
 ## Filtering
 
 ### Filetering Operators
