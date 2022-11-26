@@ -10,6 +10,9 @@ Note: Bracket characters themselves [ ] require removal. See examples.
 ```
 uname -r
 ```
+```
+lsb_release ‐a
+```
 **************************************
 ## Check for SUID or SGID Bits Set
 ```
