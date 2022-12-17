@@ -1,4 +1,4 @@
-# I do not take credit for this code. This comes from the book "Black Hat Python 2nd Edition by Justin Seitz and Tim Arnold
+# I do not take credit for this code. This comes from the book "Black Hat Python 2nd Edition" by Justin Seitz and Tim Arnold
 
 import argparse
 import socket
