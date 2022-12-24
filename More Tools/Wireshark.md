@@ -31,6 +31,10 @@ tcp.port eq <Port #> or <Protocol Name>
 eth.addr == <MAC Address>
 ```
 
+## Automated Analysis
+
+* NetworkMiner
+
 
 #### References
 * https://tryhackme.com/room/wireshark
