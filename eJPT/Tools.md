@@ -13,6 +13,8 @@
    * dnsrecon
    * waf00f
       * https://github.com/EnableSecurity/wafw00f
+   * theHarvester
+      * https://github.com/laramies/theHarvester 
 
 * Downloadable Tools
    * https://www.httrack.com 
