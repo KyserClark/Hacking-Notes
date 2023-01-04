@@ -18,7 +18,10 @@
    * https://www.httrack.com 
       ```
       sudo apt-get install webhttrack
-      ``` 
+      ```
+   * Sublist3r
+      * https://github.com/aboul3la/sublist3r 
+      
       
 * Web Tools
    * https://who.is 
