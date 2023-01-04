@@ -9,6 +9,7 @@
 * Kali Linux - Built In
    * whatweb
    * whois
+   * host
 
 * Downloadable Tools
    * https://www.httrack.com 
