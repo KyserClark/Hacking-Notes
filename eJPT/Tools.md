@@ -9,14 +9,16 @@
 * Kali Linux - Built In
    * whatweb
    * whois
-   * host
+   * host  
 
 * Downloadable Tools
    * https://www.httrack.com 
       ```
       sudo apt-get install webhttrack
-      ```
+      ```  
       
+* Web Tools
+   * who.is 
 
 
 ### References
