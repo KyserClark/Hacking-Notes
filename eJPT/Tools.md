@@ -18,8 +18,8 @@
       ```  
       
 * Web Tools
-   * who.is 
-   * netcraft.com
+   * https://who.is 
+   * https://www.netcraft.com
 
 
 ### References
