@@ -8,6 +8,7 @@
   
 * Kali Linux - Built In
    * whatweb
+   * whois
 
 * Downloadable Tools
    * https://www.httrack.com 
