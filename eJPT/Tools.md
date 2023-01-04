@@ -1,7 +1,7 @@
 # Tools
 
 ## Reconnaissance
-### Passive
+### Passive Recon
 * Firefox Add-Ons
    * BuiltWith
    * Wappalyzer  
@@ -33,6 +33,13 @@
       * https://www.exploit-db.com/google-hacking-database
       * cache: 
    * https://haveibeenpwned.com
+
+## Active Recon
+
+* Kali Linux - Built In
+   * dnsenum
+   * dig axfer 
+   * fierce
 
 
 ### References
