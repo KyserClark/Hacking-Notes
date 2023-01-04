@@ -11,12 +11,14 @@
    * whois
    * host
    * dnsrecon
+   * waf00f
+      * https://github.com/EnableSecurity/wafw00f
 
 * Downloadable Tools
    * https://www.httrack.com 
       ```
       sudo apt-get install webhttrack
-      ```  
+      ``` 
       
 * Web Tools
    * https://who.is 
