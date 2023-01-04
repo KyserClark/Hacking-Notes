@@ -4,8 +4,10 @@
 ### Passive
 * Firefox Add-Ons
    * BuiltWith
-   * Wappalyzer
-
+   * Wappalyzer  
+  
+* Kali Linux - Built In
+   * whatweb
 
 
 ### References
