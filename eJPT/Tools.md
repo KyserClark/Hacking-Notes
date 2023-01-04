@@ -11,6 +11,10 @@
 
 * Downloadable Tools
    * https://www.httrack.com 
+      ```
+			sudo apt-get install webhttrack
+			```
+      
 
 
 ### References
