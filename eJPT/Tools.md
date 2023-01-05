@@ -52,6 +52,7 @@
       ```
       sudo apt-get install netdiscover
       ```  
+   * Zenmap (gui nmap)
        
     
 ### References
