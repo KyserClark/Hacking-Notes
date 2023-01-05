@@ -44,6 +44,13 @@
 * nmap
    * https://github.com/KyserClark/Hacking-Notes/blob/main/Nmap/Scan%20Types.md 
 
+* Downloadable Tools
+   * netdiscover
+      ```
+      sudo apt-get install netdiscover
+      ```
+      
+
 
 ### References
 Penetration Tester Student v2 by INE  
