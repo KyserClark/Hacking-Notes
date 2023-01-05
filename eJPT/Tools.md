@@ -41,6 +41,9 @@
    * dig axfer 
    * fierce
 
+* nmap
+   * https://github.com/KyserClark/Hacking-Notes/blob/main/Nmap/Scan%20Types.md 
+
 
 ### References
 Penetration Tester Student v2 by INE  
