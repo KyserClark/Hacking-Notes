@@ -40,6 +40,7 @@
 * Kali Linux - Built In
    * nmap
       * https://github.com/KyserClark/Hacking-Notes/blob/main/Nmap/Scan%20Types.md 
+   * Masscan
    * dnsenum
    * dig axfer 
    * fierce
@@ -53,6 +54,9 @@
       sudo apt-get install netdiscover
       ```  
    * Zenmap (GUI nmap)
+   * NMAP Automator
+   * Rustscan
+   * Autorecon
        
     
 ### References
