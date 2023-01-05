@@ -15,6 +15,7 @@
       * https://github.com/EnableSecurity/wafw00f
    * theHarvester
       * https://github.com/laramies/theHarvester 
+   * Wireshark
 
 * Downloadable Tools
    * https://www.httrack.com 
@@ -37,21 +38,23 @@
 ## Active Recon
 
 * Kali Linux - Built In
+   * nmap
+      * https://github.com/KyserClark/Hacking-Notes/blob/main/Nmap/Scan%20Types.md 
    * dnsenum
    * dig axfer 
    * fierce
-
-* nmap
-   * https://github.com/KyserClark/Hacking-Notes/blob/main/Nmap/Scan%20Types.md 
+   * arp-scan
+   * ping
+   * fpingfp
 
 * Downloadable Tools
    * netdiscover
       ```
       sudo apt-get install netdiscover
-      ```
-      
-
-
+      ```  
+       
+    
 ### References
+
 Penetration Tester Student v2 by INE  
 https://my.ine.com/CyberSecurity/learning-paths/61f88d91-79ff-4d8f-af68-873883dbbd8c/penetration-testing-student-v2
