@@ -54,7 +54,7 @@
       sudo apt-get install netdiscover
       ```  
    * Zenmap (GUI nmap)
-   * NMAP Automator
+   * nmap Automator
    * Rustscan
    * Autorecon
        
