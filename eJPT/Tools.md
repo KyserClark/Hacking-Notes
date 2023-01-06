@@ -62,6 +62,11 @@
 
 ### Sever Message Block (SMB)
 
+#### Connect to Share via Windows CLI
+```
+net use z: \\[TARGET-IP]\c$ [PASSWORD] /user:[USERNAME]
+```
+
 #### nmap
 
 * Check SMB Version/Protocols/Dialects
