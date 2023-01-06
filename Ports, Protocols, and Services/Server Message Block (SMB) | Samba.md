@@ -9,10 +9,22 @@ Note: Bracket characters themselves [ ] require removal. See examples.
 ```
 nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
 ```
+
+## After Authenticating:
+```
+nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
+```
+
+## Enumerate SMB Shares & List Directories
+```
+nmap -p [PORT] --script=smb-enum-shares,smb-ls --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
+```
+
 ### List SMB Shares:
 ```
 smbclient -L \\[TARGET-IP]
 ```
+
 ### Inspect Share:
 ```
 smbclient //[TARGET-IP]/[SHARE-NAME]
@@ -47,23 +59,43 @@ nmap -p [PORT] --script=nfs-ls,nfs-statfs,nfs-showmount [TARGET-IP]
 nmap -p [PORT] --script smb-vuln* [TARGET-IP]
 ```
 
-### Check SMB Versions/Protocols
+### Check SMB Versions/Protocols:
 ```
 nmap -p 445 --script smb-protocols [TARGET-IP]
 ```
 
-### Check SMB Security
+### Check SMB Security:
 ```
 nmap -p 445 --script smb-security-mode [TARGET-IP]
 ```
 
-### Show SMB Sessions
+### Show SMB Sessions:
 ```
 nmap -p 445 --script smb-enum-sessions [TARGET-IP]
 ```
 
-### Log into SMB Share
+### Log into SMB Share:
 ```
 nmap -p 445 --script smb-enum-sessions --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
+```
+
+### SMB Server Stats:
+```
+nmap -p [PORT] --script=smb-server-stats --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
+```
+
+### Enumerate Domains:
+```
+nmap -p [PORT] --script=smb-enum-domains --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
+```
+
+### Enumerate Groups
+```
+nmap -p [PORT] --script=smb-enum-groups --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
+```
+
+### Enumerate Services
+```
+nmap -p [PORT] --script=smb-enum-services --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
 ```
 
