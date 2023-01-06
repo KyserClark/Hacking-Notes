@@ -78,7 +78,7 @@ nmap -p 445 --script smb-enum-sessions [TARGET-IP]
 ```
 nmap -p 445 --script smb-enum-sessions --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
 ```
-* Enumerate SMB Shares
+* Enumerate SMB Shares & Users
 ```
 nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
 ```
