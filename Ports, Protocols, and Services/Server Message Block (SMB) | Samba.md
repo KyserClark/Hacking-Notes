@@ -52,3 +52,8 @@ nmap -p [PORT] --script smb-vuln* [TARGET-IP]
 nmap -p 445 --script smb-protocols [TARGET-IP]
 ```
 
+### Check SMB Security
+```
+nmap -p 445 --script smb-security-mode [TARGET-IP]
+```
+
