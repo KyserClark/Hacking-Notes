@@ -57,7 +57,26 @@
    * nmap Automator
    * Rustscan
    * Autorecon
-       
+      
+## Enumeration
+
+* Sever Message Block (SMB)
+   * Check SMB Version/Protocols
+   ```
+   nmap -p 445 --script smb-protocols [TARGET-IP]
+   ```
+   * Check SMB Security
+   ```
+   nmap -p 445 --script smb-security-mode [TARGET-IP]
+   ```
+   * Show SMB Sessions
+   ```
+   nmap -p 445 --script smb-enum-sessions [TARGET-IP]
+   ```
+   * Log into SMB
+   ```
+   nmap -p 445 --script smb-enum-sessions --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
+   ```
     
 ### References
 
