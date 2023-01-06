@@ -47,3 +47,8 @@ nmap -p [PORT] --script=nfs-ls,nfs-statfs,nfs-showmount [TARGET-IP]
 nmap -p [PORT] --script smb-vuln* [TARGET-IP]
 ```
 
+### Check SMB Versions/Protocols
+```
+nmap -p 445 --script smb-protocols [TARGET-IP]
+```
+
