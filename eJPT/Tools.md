@@ -64,7 +64,7 @@
 
 #### nmap
 
-* Check SMB Version/Protocols
+* Check SMB Version/Protocols/Dialects
 ```
 nmap -p 445 --script smb-protocols [TARGET-IP]
 ```
