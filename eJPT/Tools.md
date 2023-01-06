@@ -35,7 +35,7 @@
       * cache: 
    * https://haveibeenpwned.com
 
-## Active Recon
+### Active Recon
 
 * Kali Linux - Built In
    * nmap
@@ -60,23 +60,24 @@
       
 ## Enumeration
 
-* Sever Message Block (SMB)
-   * Check SMB Version/Protocols
-   ```
-   nmap -p 445 --script smb-protocols [TARGET-IP]
-   ```
-   * Check SMB Security
-   ```
-   nmap -p 445 --script smb-security-mode [TARGET-IP]
-   ```
-   * Show SMB Sessions
-   ```
-   nmap -p 445 --script smb-enum-sessions [TARGET-IP]
-   ```
-   * Log into SMB
-   ```
-   nmap -p 445 --script smb-enum-sessions --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
-   ```
+### Sever Message Block (SMB)
+
+* Check SMB Version/Protocols
+```
+nmap -p 445 --script smb-protocols [TARGET-IP]
+```
+* Check SMB Security
+```
+nmap -p 445 --script smb-security-mode [TARGET-IP]
+```
+* Show SMB Sessions
+```
+nmap -p 445 --script smb-enum-sessions [TARGET-IP]
+```
+* Log into SMB Share
+```
+nmap -p 445 --script smb-enum-sessions --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
+```
     
 ### References
 
