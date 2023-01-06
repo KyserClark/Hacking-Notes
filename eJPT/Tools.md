@@ -125,7 +125,7 @@ smbmap -u guest -p "" -d . -H [TARGET-IP]
 smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP] -x [COMMAND-TO-RUN]
 ```
 * -L to list drives
-* -r '[DRIVE-LETTER]'$ | Example: -r 'c$'
+* -r to look at contents: -r '[DRIVE-LETTER]'$ | Example: -r 'c$'
 * --upload '[FILE-PATH]' '[DESTINATION] | Example: --upload '/root/backdoor' 'C$\backdoor'
 * --download ['FILE-PATH] | Example: --download 'C$\flag.txt'
 
