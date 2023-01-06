@@ -57,3 +57,13 @@ nmap -p 445 --script smb-protocols [TARGET-IP]
 nmap -p 445 --script smb-security-mode [TARGET-IP]
 ```
 
+### Show SMB Sessions
+```
+nmap -p 445 --script smb-enum-sessions [TARGET-IP]
+```
+
+### Log into SMB Share
+```
+nmap -p 445 --script smb-enum-sessions --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
+```
+
