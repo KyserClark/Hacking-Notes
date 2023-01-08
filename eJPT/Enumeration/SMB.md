@@ -58,7 +58,7 @@ nmap -p [PORT] --script smb-os-discovery [TARGET-IP]
 
 ## smbmap
 ```
-smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP]
+smbmap -u [USERNAME] -p [PASSWORD] -d . -H [TARGET-IP]
 ```
 ```
 smbmap -u guest -p "" -d . -H [TARGET-IP]
@@ -86,6 +86,12 @@ use auxilary/scanner/smb/smb2
 use auxilary/scanner/smb/smb_enumshares
 ```
 ```
+use auxilary/scanner/smb/smb_login
+```
+```
+use auxilary/scanner/smb/pipe-auditor
+```
+```
 show options 
 ```
 * set fields
@@ -99,11 +105,19 @@ nmblookkup -A [TARGET-IP]
 ```
 
 ## smbclient
+* Null login
 ```
 smbclient -L [TARGET-IP] -N
 ```
 ```
 smbclient //[TARGET-IP]/[SHARE] -N
+```
+* Authenticated login
+```
+smbclient -L [TARGET-IP] -U [USERNAME]
+```
+```
+smbclient //[TARGET-IP]/[SHARE] -U [USERNAME]
 ```
 
 ## rpcclient
@@ -139,6 +153,10 @@ enum4linux -o [TARGET-IP]
 ```
 enum4linux -U [TARGET-IP]
 ```
+* Show user SIDs
+```
+enum4linux -r -u "[USERNAME]" -p "[PASSWORD]" [TARGET-IP]
+```
 * Show groups
 ```
 enum4linux -G [TARGET-IP]
@@ -152,6 +170,11 @@ enum4linux -S [TARGET-IP]
 enum4linux -i [TARGET-IP]
 ```
 
+
+## hydra
+```
+hydra -l [USERNAME] -P [PATH-TO-WORDLIST] [TARGET-IP] smb
+```
 
 ### References
 
