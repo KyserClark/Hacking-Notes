@@ -138,7 +138,11 @@ smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP] -x [COMMAND-TO-RUN]
 msfconsole
 ```
 ```
-use auxilary/scanner/smb/smb_version
+use auxilary/scanner/smb/[SMB-VERSION]
+```
+Example:
+```
+use auxilary/scanner/smb/smb2
 ```
 ```
 show options 
@@ -165,7 +169,27 @@ rpcclient -U "[USERNAME]" -P "[PASSWORD]" [TARGET-IP]
 ```
 rpcclient -U "" -N [TARGET-IP]
 ```
+* Command below is only for AFTER connection is made with rpcclient
+Service info
+```
+srvinfo
+```
+Show users
+```
+enumdomusers
+```
+```
+lookupnames [USERNAME]
+```
 
+#### enum4linux
+* OS info
+```
+enum4linux -o [TARGET-IP]
+```
+* Show users
+```
+enum4linux -U [TARGET-IP]
 
 ### References
 
