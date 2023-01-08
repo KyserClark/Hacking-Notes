@@ -129,6 +129,9 @@ Example:
 use auxilary/scanner/smb/smb2
 ```
 ```
+use auxilary/scanner/smb/smb_enumshares
+```
+```
 show options 
 ```
 * set fields
@@ -145,6 +148,9 @@ nmblookkup -A [TARGET-IP]
 ```
 smbclient -L [TARGET-IP] -N
 ```
+```
+smbclient //[TARGET-IP]/[SHARE] -N
+```
 
 #### rpcclient
 ```
@@ -158,12 +164,16 @@ Service info
 ```
 srvinfo
 ```
-Show users
+* Show users
 ```
 enumdomusers
 ```
 ```
 lookupnames [USERNAME]
+```
+* Show groups
+```
+enumdomgroups
 ```
 
 #### enum4linux
@@ -174,3 +184,16 @@ enum4linux -o [TARGET-IP]
 * Show users
 ```
 enum4linux -U [TARGET-IP]
+```
+* Show groups
+```
+enum4linux -G [TARGET-IP]
+```
+* Show shares
+```
+enum4linux -S [TARGET-IP]
+```
+* See if printing is set up
+```
+enum4linux -i [TARGET-IP]
+```
