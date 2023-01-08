@@ -1,5 +1,19 @@
 # FTP
 
+## Login
+```
+ftp [TARGET-IP]
+```
+
+## Hydra
+```
+hydra -L [WORDLIST-PATH] -P [WORDLIST-PATH] [TARGET-IP] ftp
+```
+
+## nmap 
+```
+nmap [TARGET-IP] --script ftp-brute --script-args userdb=[WORDLIST-PATH] -p 21
+```
 
 
 ### References
