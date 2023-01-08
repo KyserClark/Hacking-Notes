@@ -9,13 +9,12 @@ Note: Bracket characters themselves [ ] require removal. See examples.
 ```
 nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse [TARGET-IP]
 ```
-
-## After Authenticating:
+#### After Authenticating:
 ```
 nmap -p [PORT] --script=smb-enum-shares.nse,smb-enum-users.nse --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
 ```
 
-## Enumerate SMB Shares & List Directories
+### Enumerate SMB Shares & List Directories
 ```
 nmap -p [PORT] --script=smb-enum-shares,smb-ls --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
 ```
@@ -117,7 +116,7 @@ smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP] -x [COMMAND-TO-RUN]
 * --upload '[FILE-PATH]' '[DESTINATION] | Example: --upload '/root/backdoor' 'C$\backdoor'
 * --download '[FILE-PATH]' | Example: --download 'C$\flag.txt'
 
-#### Metasploit
+### Metasploit
 ```
 msfconsole
 ```
@@ -132,6 +131,9 @@ use auxilary/scanner/smb/smb2
 use auxilary/scanner/smb/smb_enumshares
 ```
 ```
+use auxilary/scanner/smb/pipe-auditor
+```
+```
 show options 
 ```
 * set fields
@@ -139,20 +141,23 @@ show options
 exploit
 ```
 
-#### nmblookup
-```
-nmblookkup -A [TARGET-IP]
-```
-
-#### smbclient
+### nmblookup
+* Null login
 ```
 smbclient -L [TARGET-IP] -N
 ```
 ```
 smbclient //[TARGET-IP]/[SHARE] -N
 ```
+* Authenticated login
+```
+smbclient -L [TARGET-IP] -U [USERNAME]
+```
+```
+smbclient //[TARGET-IP]/[SHARE] -U [USERNAME]
+```
 
-#### rpcclient
+### rpcclient
 ```
 rpcclient -U "[USERNAME]" -P "[PASSWORD]" [TARGET-IP]
 ```
@@ -176,7 +181,7 @@ lookupnames [USERNAME]
 enumdomgroups
 ```
 
-#### enum4linux
+### enum4linux
 * OS info
 ```
 enum4linux -o [TARGET-IP]
@@ -184,6 +189,10 @@ enum4linux -o [TARGET-IP]
 * Show users
 ```
 enum4linux -U [TARGET-IP]
+```
+* Show user SIDs
+```
+enum4linux -r -u "[USERNAME]" -p "[PASSWORD]" [TARGET-IP]
 ```
 * Show groups
 ```
@@ -196,4 +205,9 @@ enum4linux -S [TARGET-IP]
 * See if printing is set up
 ```
 enum4linux -i [TARGET-IP]
+```
+
+### hydra
+```
+hydra -l [USERNAME] -P [PATH-TO-WORDLIST] [TARGET-IP] smb
 ```
