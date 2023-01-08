@@ -1,7 +1,7 @@
 # Hydra - VNC
 
 ```
-hydra - P [WORDLIST] [TARGET-IP] vnc
+hydra -P [WORDLIST] [TARGET-IP] vnc
 ```
 Example:
 ```
