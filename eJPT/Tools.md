@@ -133,6 +133,39 @@ smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP] -x [COMMAND-TO-RUN]
 * --upload '[FILE-PATH]' '[DESTINATION] | Example: --upload '/root/backdoor' 'C$\backdoor'
 * --download '[FILE-PATH]' | Example: --download 'C$\flag.txt'
 
+#### Metasploit
+```
+msfconsole
+```
+```
+use auxilary/scanner/smb/smb_version
+```
+```
+show options 
+```
+* set fields
+```
+exploit
+```
+
+#### nmblookup
+```
+nmblookkup -A [TARGET-IP]
+```
+
+#### smbclient
+```
+smbclient -L [TARGET-IP] -N
+```
+
+#### rpcclient
+```
+rpcclient -U "[USERNAME]" -P "[PASSWORD]" [TARGET-IP]
+```
+```
+rpcclient -U "" -N [TARGET-IP]
+```
+
 
 ### References
 
