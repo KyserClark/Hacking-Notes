@@ -135,6 +135,7 @@ Option                | Description
 -p-                   | All ports
 -p1-1023              | Ports 1-1023
 -F                    | Top 100 common ports
+--top-port [number]   | Top n common ports
 -r                    | Scan ports in consecutive order
 -Pn                   | Disable Host Discovery
 -n                    | Never do DNS resolution
@@ -241,6 +242,7 @@ Option                       | Description
 -oG                          | Save output in grepable format
 -oX                          | Save output in XML format
 -oA                          | Save output in normal, XML and Grepable formats
+--open                       | Show only open ports (useful for UDP scans)
                     
 
 ## Resources
@@ -256,3 +258,5 @@ Option                       | Description
 * https://tryhackme.com/room/nmap03
 * https://tryhackme.com/room/nmap04
 * Chapple, M., & Seidl, D. (2022). CompTIA PenTest+ Study Guide: Exam PT0-002 (2nd ed.). Sybex. (Chapter 3)
+* Penetration Tester Student v2 by INE
+   * https://my.ine.com/CyberSecurity/learning-paths/61f88d91-79ff-4d8f-af68-873883dbbd8c/penetration-testing-student-v2
