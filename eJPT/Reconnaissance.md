@@ -1,6 +1,5 @@
-# Reconnaissance
+# Passive Recon
 
-## Passive Recon
 * Firefox Add-Ons
    * BuiltWith
    * Wappalyzer  
@@ -33,30 +32,7 @@
       * https://www.exploit-db.com/google-hacking-database
       * cache: 
    * https://haveibeenpwned.com
-
-## Active Recon
-
-* Kali Linux - Built In
-   * nmap
-      * https://github.com/KyserClark/Hacking-Notes/blob/main/Nmap/Scan%20Types.md 
-   * Masscan
-   * dnsenum
-   * dig axfer 
-   * fierce
-   * arp-scan
-   * ping
-   * fpingfp
-
-* Downloadable Tools
-   * netdiscover
-      ```
-      sudo apt-get install netdiscover
-      ```  
-   * Zenmap (GUI nmap)
-   * nmap Automator
-   * Rustscan
-   * Autorecon
-      
+     
 
 ### References
 
