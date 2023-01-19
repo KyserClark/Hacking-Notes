@@ -33,6 +33,9 @@ use auxiliary/scanner/mysql/mysql_writable_dirs
 ```
 use auxiliary/scanner/mysql/mysql_hashdump
 ```
+```
+use auxiliary/scanner/mysql/mysql_login
+```
 show advanced options:
 ```
 advanced
@@ -47,6 +50,11 @@ advanced
 * --script=mysql-dump-hashes --script-args="mysqluser='[USERNAME]',mysqlpass='[PASSWORD]'"
 * --script=mysql-query --script-args="query='select * from [TABLE];',username='[USERNAME]',password='[PASSWORD]'"
 * --script=mysql-audit --script-args="mysql-audit.username='[USERNAME]',mysql-audit.password='[PASSWORD]',mysql-audit.filename='/usr/share/nmap/nselib/data/mysql-cis.audit'"
+
+## Hydra
+```
+hydra -l [USERNAME] -P [WORDLIST-PATH] mysql
+```
 
 ### References
 
