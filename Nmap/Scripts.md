@@ -5,6 +5,7 @@
 * [Check for Known Vulnerabilities within an SMB Share](#check-for-known-vulnerabilities-within-an-smb-share)
 * [Brute Force Domain](#brute-force-domain)
 * [Detect Web Application Firewall](#detect-web-application-firewall)
+* [SSL Enumeration](#ssl-enumeration)
 * [Resources](#resources)
 
 *************************************************************************************************************************************************************************
@@ -60,6 +61,11 @@ nmap --script=http-waf-detect.nse KyserClark.com
 ## Certificate Enumeration and Inspection
 ```
 nmap --script=ssl-cert.nse
+```
+***************************************************************************
+## SSL Enumeration
+```
+nmap -sV --script ssl-enum-cipers -p [PORT] [HOST]
 ```
 ***************************************************************************
 ## Resources
