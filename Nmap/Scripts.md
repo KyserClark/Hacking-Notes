@@ -67,6 +67,9 @@ nmap --script=ssl-cert.nse
 ```
 nmap -sV --script ssl-enum-cipers -p [PORT] [HOST]
 ```
+```
+nmap -p [PORT] --script ssl-heartbleed [TARGET]
+```
 ***************************************************************************
 ## Resources
 https://nmap.org/nsedoc/index.html 
