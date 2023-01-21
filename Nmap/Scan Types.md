@@ -23,7 +23,7 @@
    * [Spoofed Source IP](#spoofed-source-ip)
    * [Spoofed MAC Address](#spoofed-mac-address)
    * [Decoy Scan](#decoy-scan)
-   * [Idle (Zombie) Scan](#idle-(zombie)-scan)
+   * [Idle (Zombie) Scan](#idle-AKA-zombie-scan)
       * [Advanced Options](#advanced-options)
  * [Nmap Post Port Scans](#nmap-post-port-scans)
       * [Post Scan Options](#post-scan-options)
@@ -200,7 +200,7 @@ sudo nmap -S [SPOOFED-IP] [TARGET-IP]
 nmap -D DECOY_IP,ME [TARGET-IP]
 ```
 
-### Idle (Zombie) Scan
+### Idle AKA Zombie Scan
 ```
 sudo nmap -sI [ZOMBIE-IP] [TARGET-IP]
 ```
