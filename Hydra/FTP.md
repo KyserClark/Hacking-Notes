@@ -5,7 +5,7 @@ Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.
 Note: Bracket characters themselves [ ] require removal. See examples.
 *********************************************************************************
 
-### FTP Dictinary Attack:
+### FTP Dictionary Attack:
 ```
 hydra -l [USERNAME] -P [WORDLIST-PATH] ftp://[TARGET-IP]
 ```

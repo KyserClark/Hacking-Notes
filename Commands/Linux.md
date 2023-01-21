@@ -5,7 +5,7 @@
    * [System Process Information](#system-process-information)
    * [Operating System Information](#operating-system-information)
    * [Show Running Processes](#show-running-processes)
-   * [Show Enviroment Variables](#show-enviroment-variables)
+   * [Show Environment Variables](#show-environment-variables)
    * [Show All Commands Your User Can Run With Sudo](#show-all-commands-your-user-can-run-with-sudo)
    * [General Overview of User Privilege Level and Group Memberships](#general-overview-of-user-privilege-level-and-group-memberships)
    * [Connections Information](#connections-information)
@@ -71,7 +71,7 @@ ps axjf
 ps aux
 ```
 *********************************************************************************
-### Show Enviroment Variables
+### Show Environment Variables
 ```
 env
 ```

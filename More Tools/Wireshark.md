@@ -6,7 +6,7 @@
 
 ## Filtering
 
-### Filetering Operators
+### Filtering Operators
 
 * and - operator: and / &&
 * or - operator: or / ||

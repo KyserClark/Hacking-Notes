@@ -85,7 +85,7 @@ for string in buffer:
 ```
   
 #### Step 5: Create exploit.py skeleton:
-*Most likley, the examples provided will have to be modified in some way since every program is different*
+*Most likely, the examples provided will have to be modified in some way since every program is different*
  
 exploit.py Example 1:
  
@@ -224,7 +224,7 @@ Example:
 ```
 !mona jmp -r esp -cpb "[BAD-CHARACTERS]"
 ```
-*Most likley, no output will be generated. View Logs in Immunity to see jump point*
+*Most likely, no output will be generated. View Logs in Immunity to see jump point*
 
 #### Step 26: Write jump point address discovered backwards into the retn variable of exploit.py
 

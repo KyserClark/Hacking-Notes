@@ -10,7 +10,7 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 export TERM=xterm
 ```
 3. *Background shell with Ctrl+Z*
-4. Give tab autocomplete, arrow keys, and Ctrl+C and forgrounds the shell with this command:
+4. Give tab autocomplete, arrow keys, and Ctrl+C and foregrounds the shell with this command:
 ```
 stty raw -echo; fg
 ```

@@ -118,7 +118,7 @@ sudo nmap -sT [TARGET-IP]
 ```
 
 ### TCP SYN Scan:
-AKA "Stealh Scan"; is faster than a full connect scan because it does not complete the TCP three-way handshake; modern firewall will still detect this type of scan. 
+AKA "Stealth Scan"; is faster than a full connect scan because it does not complete the TCP three-way handshake; modern firewall will still detect this type of scan. 
 ```
 sudo nmap -sS [TARGET-IP]
 ```

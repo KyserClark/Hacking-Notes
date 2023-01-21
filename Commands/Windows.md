@@ -104,7 +104,7 @@ Get-ADDomain -Server [DOMAIN]
 ************************************
 ## Microsoft Deployment Toolkit
 
-Dowload BDC file via TFTP:
+Download BDC file via TFTP:
 ```
 tftp -i [TARGET-IP] GET "\Tmp\[FILE-PATH]" conf.bcd
 ```
