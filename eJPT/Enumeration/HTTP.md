@@ -10,6 +10,7 @@
 * [dirb](#dirb)
 * [browsh](#browsh)
 * [lynx](#lynx)
+* [References](#references)
 
 ***********************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  

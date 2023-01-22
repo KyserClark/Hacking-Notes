@@ -1,5 +1,13 @@
 # SSL
 
+* [nmap](#nmap)
+* [References](#references)
+
+***********************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
+Note: Bracket characters themselves [ ] require removal. See examples.
+***********************************************************************
+
 ## nmap
 
 ```

@@ -1,5 +1,15 @@
 # SSH
 
+* [nmap](#nmap)
+* [Hydra](#hydra)
+* [Metasploit](#metasploit)
+* [References](#references)
+
+***********************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
+Note: Bracket characters themselves [ ] require removal. See examples.
+***********************************************************************
+
 ## nmap
 Enumerate algorithms
 ```
@@ -18,10 +28,14 @@ SSH dictionary attack
 nmap [TARGET-IP] -p 22 --script ssh-brute --script-args userdb=[WORDLIST-PATH]
 ```
 
+***********************************************************************
+
 ## Hydra
 ```
 hydra -l [USERNAME] -P [WORDLIST-PATH] [TARGET-IP] ssh
 ```
+
+***********************************************************************
 
 ## Metasploit
 ```
@@ -38,6 +52,7 @@ Set options
 exploit
 ```
 
+***********************************************************************
 
 ### References
 
