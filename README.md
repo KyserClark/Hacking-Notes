@@ -6,7 +6,7 @@ This repository serves as my personal hacking notebook/toolbox. It is a quick re
 
 This repository will never be finished and will be continuously updated throughout my cybersecurity career. I hope you find it as helpful as I do! :)
 
-- *Kyser J. Clark*
+-- *Kyser J. Clark*
 
 ### Credits
 * TryHackMe
