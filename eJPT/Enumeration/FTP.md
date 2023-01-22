@@ -1,15 +1,29 @@
 # FTP
 
+* [Login](#login)
+* [Hydra](#hydra)
+* [nmap](#nmap)
+* [References](#references)
+
+******************************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
+Note: Bracket characters themselves [ ] require removal. See examples.
+******************************************************************************
+
 ## Login
 ```
 ftp [TARGET-IP]
 ```
 Login with anonymous does not require password if anonymous logins are allowed.  
 
+***********************************************************************
+
 ## Hydra
 ```
 hydra -L [WORDLIST-PATH] -P [WORDLIST-PATH] [TARGET-IP] ftp
 ```
+
+***********************************************************************
 
 ## nmap 
 Dictionary attack
@@ -20,6 +34,8 @@ Check for anonymous logins
 ```
 nmap [TARGET-IP] --script ftp-anon -p 21
 ```
+
+***********************************************************************
 
 ### References
 

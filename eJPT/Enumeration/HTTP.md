@@ -1,17 +1,34 @@
 # HTTP
 
-## Tools
+* [Internet Browser](#internet-browser)
+* [nmap](#nmap)
+* [Metasploit](#metasploit)
+* [curl](#curl)
+* [wget](#wget)
+* [whatweb](#whatweb)
+* [htt pie](#htt-pie)
+* [dirb](#dirb)
+* [browsh](#browsh)
+* [lynx](#lynx)
 
-### internet browser
+***********************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
+Note: Bracket characters themselves [ ] require removal. See examples.
+***********************************************************************
 
-### nmap
+## Internet Browser
+***********************************************************************
+
+## nmap
 * --script http-enum
 * --script http-headers
 * -script banner
 * --script http-methods --script-args http-methods.url-path=/[URL]
 * --script http-webdav-scan --script-args http-methods.url-path=/[URL]
 
-### Metasploit
+***********************************************************************
+
+## Metasploit
 ```
 use auxiliary/scanner/http/http_version
 ```
@@ -22,38 +39,56 @@ use auxiliary/scanner/http/brute_dirs
 use auxiliary/scanner/http/robots_txt
 ```
 
-### curl
+***********************************************************************
+
+## curl
 ```
 curl [IP-ADDRESS]
 ```
 
-### wget
+***********************************************************************
+
+## wget
 ```
 wget [URL]
 ```
 
-### whatweb
+***********************************************************************
+
+## whatweb
 ```
 whatweb [IP-ADDRESS] 
 ```
-### htt pie
+
+***********************************************************************
+
+## htt pie
 ```
 http [IP-ADDRESS]
 ```
-### dirb
+
+***********************************************************************
+
+## dirb
 ```
 dib [URL]
 ```
-### browsh
+
+***********************************************************************
+
+## browsh
 ```
 browsh --startup-url [URL]
 ```
 
-### lynx
+***********************************************************************
+
+## lynx
 ```
 lynx [URL]
 ```
 
+***********************************************************************
 
 ### References
 

