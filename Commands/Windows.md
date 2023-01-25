@@ -205,6 +205,10 @@ List ACL for file path:
 ```
 Get-Acl [FILE-PATH]
 ```
+Download file from simple web server:
+```
+certutil -urlcache -f [FILE-PATH-ON-HTTP-SERVER] [OUT-FILE]
+```
 
 ************************************
 
