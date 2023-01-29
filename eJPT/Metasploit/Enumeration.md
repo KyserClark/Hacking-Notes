@@ -1,5 +1,14 @@
 # Enumeration
 
+* [Port Scanning With Auxiliary Modules](#port-scanning-with-auxiliary-modules)
+* [FTP](#ftp)
+* [SMB](#smb)
+* [HTTP](#http)
+* [MySQL](#mysql)
+* [SSH](#ssh)
+* [SMTP](#smtp)
+* [References](#references)
+
 ***********************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
 Note: Bracket characters themselves [ ] require removal. See examples.
@@ -157,6 +166,23 @@ use auxiliary/scanner/ssh/ssh_login
 Enumerate Users:
 ```
 use auxiliary/scanner/ssh/ssh_enumusers
+```
+
+***********************************************************************
+
+# SMTP
+
+Search for SMTP auxiliary modules:
+```
+search type:auxiliary name:smtp
+```
+Check SMTP version:
+```
+use auxiliary/scanner/smtp/smtp_version
+```
+User enumeration:
+```
+use auxiliary/scanner/smtp/smtp_enum
 ```
 
 ***********************************************************************
