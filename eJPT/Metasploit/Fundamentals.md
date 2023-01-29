@@ -115,6 +115,23 @@ sessions
 ```
 connect [TARGET-IP] [PORT]
 ```
+Set global variables:
+```
+setg [VARIABLE]
+```
+Get info about a module (after use [MODULE]):
+```
+info
+```
+```
+services
+```
+```
+creds
+```
+```
+loot
+```
 
 ***********************************************************************
 
