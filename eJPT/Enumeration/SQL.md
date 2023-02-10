@@ -22,7 +22,7 @@ show databases;
 use [DATABASE];
 ```
 ```
-show [TABLES];
+show tables;
 ```
 ```
 select count(*) from [TABLE];
