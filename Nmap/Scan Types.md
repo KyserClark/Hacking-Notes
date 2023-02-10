@@ -1,5 +1,6 @@
 # Nmap Scan Types
 * [Nmap Live Host Discovery](#nmap-live-host-discovery)
+   * [Ping Scan](#ping-scan)
    * [ARP Scan](#arp-scan)
    * [ICMP Echo Scan](#icmp-echo-scan)
    * [ICMP Timestamp Scan](#icmp-timestamp-scan)
