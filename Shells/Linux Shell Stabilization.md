@@ -1,6 +1,12 @@
-# Netcat Shell Stabilization
+# Linux Shell Stabilization
 
-## Technique #1
+```
+/bin/bash -i
+```
+
+## Netcat Shell Stabilization
+
+### Technique #1
 1. Run this command: (replace "python" with "python2" or "python3" as required)
 ```
 python -c 'import pty;pty.spawn("/bin/bash")'
@@ -15,7 +21,7 @@ export TERM=xterm
 stty raw -echo; fg
 ```
 *******************************************************************************
-## Technique #2 (Useful with Windows Shells)
+### Technique #2 (Useful with Windows Shells)
 1. Install rlwrap:
 ```
 sudo apt install rlwrap
@@ -31,6 +37,6 @@ stty raw -echo; fg
 ```
 *******************************************************************************
 
-## Reference
+### Reference
 
 * https://tryhackme.com/room/introtoshells
