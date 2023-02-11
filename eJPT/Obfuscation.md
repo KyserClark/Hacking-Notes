@@ -57,6 +57,47 @@ Enter to continue...
 
 * Now set up a listener and get target to run the exe
 
+***********************************************************************
+
+## Obfuscating PowerShell Code
+
+### Invoke-Obfuscation
+
+* GitHub:
+   * https://github.com/danielbohannon/invoke-obfuscation
+
+
+Install PowerShell on Linux:
+```
+sudo apt-get install powershell -y
+```
+
+Launch it:
+```
+pwsh
+```
+```
+dir
+```
+```
+Import-Module ./[MODULE]
+```
+```
+[MODULE]
+```
+
+* Now get PowerShell Code of choice and set script path:
+```
+SET SCRIPTPATH [PATCH-TO-POWERSHELL-CODE]
+```
+```
+[CHOOSE-OBFUSCATION-TYPE]
+```
+* Now copy & paste output code into a file. 
+* Then Transfer file to target, start a listener, and have the target run the code.
+
+*you can go back with 'back' and you can reset encoding with 'reset'*
+
 
 ***********************************************************************
 
