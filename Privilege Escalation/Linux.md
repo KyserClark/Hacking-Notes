@@ -5,6 +5,12 @@ Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.
 Note: Bracket characters themselves [ ] require removal. See examples.
 *********************************************************************************
 
+## Check Sudo Permissions for Current User
+
+```
+sudo -l
+```
+**************************************
 ## Check for Kernel Exploits
 
 ```
@@ -15,6 +21,7 @@ lsb_release ‐a
 ```
 **************************************
 ## Check for SUID or SGID Bits Set
+
 ```
 find / -type f -perm -04000 -ls 2>/dev/null
 ```
@@ -24,11 +31,13 @@ find / -perm -u=s -type f 2>/dev/null
 ```
 **************************************
 ## Check Capabilities
+
 ```
 getcap -r / 2>/dev/null
 ```
 **************************************
 ## Check Cron Jobs
+
 ```
 cat /etc/crontab
 ```
