@@ -3,11 +3,16 @@
 * [Internet Browser](#internet-browser)
 * [nmap](#nmap)
 * [Metasploit](#metasploit)
+* [Proxies](#proxies)
+* [Nikto](#nikto)
+* [SQLMap](#sqlmap)
+* [XSSer](#xsser)
 * [curl](#curl)
 * [wget](#wget)
 * [whatweb](#whatweb)
 * [htt pie](#htt-pie)
 * [dirb](#dirb)
+* [gobuster](#gobuster)
 * [browsh](#browsh)
 * [lynx](#lynx)
 * [References](#references)
@@ -42,9 +47,55 @@ use auxiliary/scanner/http/robots_txt
 
 ***********************************************************************
 
+## Proxies
+
+* Burp Suite
+* Zed Attack Proxy (ZAP)
+
+***********************************************************************
+
+## Nikto
+
+```
+nikto -h [URL] -o [OUTFILE] -Format htm
+```
+
+***********************************************************************
+
+## SQLMap
+
+```
+sqlmap -u "[URL]"
+```
+
+***********************************************************************
+
+## XSSer
+
+```
+xsser --url "[URL]" -p [PAYLOAD] --auto
+```
+
+***********************************************************************
+
 ## curl
 ```
-curl [IP-ADDRESS]
+curl [URL]
+```
+
+Check methods:
+```
+curl -X OPTIONS [URL]
+```
+
+Upload file:
+```
+curl [URL] --upload-file [FILE]
+```
+
+Delete file:
+```
+curl -X DELETE [URL]
 ```
 
 ***********************************************************************
@@ -72,7 +123,22 @@ http [IP-ADDRESS]
 
 ## dirb
 ```
-dib [URL]
+dirb [URL]
+```
+
+***********************************************************************
+
+## gobuster
+
+*Should go faster than dirb*
+
+```
+gobuster dir -u [URL] -w [WORDLIST]
+```
+
+Search for specific file types:
+```
+gobuster dir -u [URL] -w [WORDLIST] -x [FILE-TYPE-EXTENSION-COMMA-SEPARATED] -r
 ```
 
 ***********************************************************************
