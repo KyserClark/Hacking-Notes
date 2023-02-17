@@ -101,7 +101,7 @@ use auxiliary/scanner/admin/mssql/mssql_enum_domain_accounts
 
 ## Hydra
 ```
-hydra -l [USERNAME] -P [WORDLIST-PATH] mysql
+hydra -l [USERNAME] -P [WORDLIST-PATH] [TARGET-IP] mysql
 ```
 
 ***********************************************************************
