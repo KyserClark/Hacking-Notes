@@ -279,13 +279,13 @@ Show active connections:
 netstat
 ```
 *Option	Description  
--a	show both listening and non-listening sockets  
--l	show only listening sockets  
--n	show numeric output instead of resolving the IP address and port number  
--t	TCP  
--u	UDP  
--x	UNIX  
--p	Show the PID and name of the program to which the socket belongs*  
+-a    show both listening and non-listening sockets  
+-l    show only listening sockets  
+-n	  show numeric output instead of resolving the IP address and port number  
+-t	  TCP  
+-u	  UDP  
+-x	  UNIX  
+-p	  Show the PID and name of the program to which the socket belongs*  
   
 Show all TCP and UDP listening and establised connections:
 ```
@@ -306,10 +306,10 @@ List running processes:
 ps
 ```
 *-e	all processes  
--f	full-format listing  
--j	jobs format  
--l	long format  
--u	user-oriented format*  
+-f	  full-format listing  
+-j	  jobs format  
+-l	  long format  
+-u	  user-oriented format*  
 
 *********************************************************************************
 ## Host Rogue LDAP Server
