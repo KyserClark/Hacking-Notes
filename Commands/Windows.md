@@ -214,7 +214,7 @@ certutil -urlcache -f [FILE-PATH-ON-HTTP-SERVER] [OUT-FILE]
 ## Enumeration
 
 Windows        | Command	Description
------------------------------
+-------------- | --------------------
 systeminfo     | shows OS configuration information, including service pack levels
 whoami         |shows the user name and group information along with the respective security identifiers
 netstat        | shows protocol statistics and current TCP/IP network connections
