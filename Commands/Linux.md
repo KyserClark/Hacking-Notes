@@ -11,6 +11,9 @@
    * [Connections Information](#connections-information)
    * [Find Command](#find-command)
    * [Get Capabilities](#get-capabilities)
+   * [Mail Directories](#mail-directories)
+   * [Installed Applications](#installed-applications)
+   * [Miscellaneous](#miscellaneous)
 
 * [Host Rogue LDAP Server](#host-rogue-ldap-server)
 
@@ -34,6 +37,9 @@ Note: Bracket characters themselves [ ] require removal. See examples.
 ### Hostname
 ```
 hostname
+```
+```
+ls /etc/*-release
 ```
 *********************************************************************************
 ### Kernel and System Information
@@ -225,7 +231,87 @@ getcap -r / 2>/dev/null
 ```
 
 *********************************************************************************
+### Mail Directories
+```
+/var/mail/
+```
+*********************************************************************************
+### Installed Applications
+```
+ls -lh /usr/bin/
+```
+```
+ls -lh /sbin/
+```
+List Intalled Packages on RPM based distros:
+```
+rmp -qa
+```
 
+List Installed Packages on Debian based distros:
+```
+dpkg -l
+```
+*********************************************************************************
+### Miscellaneous
+Show current logges on users:
+```
+who
+```
+Show who is logged on and what they are doing:
+```
+w
+```
+Print real and effective user and group IDS:
+```
+id
+```
+Show who has logged in last:
+```
+last
+```
+Show DNS info:
+```
+/etc/resolv.conf
+```
+Show active connections:
+```
+netstat
+```
+*Option	Description  
+-a	show both listening and non-listening sockets  
+-l	show only listening sockets  
+-n	show numeric output instead of resolving the IP address and port number  
+-t	TCP  
+-u	UDP  
+-x	UNIX  
+-p	Show the PID and name of the program to which the socket belongs*  
+  
+Show all TCP and UDP listening and establised connections:
+```
+netstat -atupn
+```
+
+List open files:
+```
+lsof
+```
+List open files internet:
+```
+lsof -i
+```
+
+List running processes:
+```
+ps
+```
+*-e	all processes  
+-f	full-format listing  
+-j	jobs format  
+-l	long format  
+-u	user-oriented format*  
+
+*********************************************************************************
 ## Host Rogue LDAP Server
 
 1st:
@@ -304,3 +390,4 @@ evil-winrm -i [TARGET-IP] -u [USERNAME] -H [NTLM-HASH]
 ## References
 * https://tryhackme.com/room/linprivesc
 * https://tryhackme.com/room/breachingad
+* https://tryhackme.com/room/enumerationpe
