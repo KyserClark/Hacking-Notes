@@ -3,6 +3,7 @@
 * [Active Directory](#active-directory)
 * [Microsoft Deployment Toolkit](#microsoft-deployment-toolkit)
 * [PowerShell](#powershell)
+* [Enumeration](#enumeration)
 
 
 ## Active Directory
@@ -209,10 +210,21 @@ Download file from simple web server:
 ```
 certutil -urlcache -f [FILE-PATH-ON-HTTP-SERVER] [OUT-FILE]
 ```
+************************************
+## Enumeration
+
+Windows        | Command	Description
+-----------------------------
+systeminfo     | shows OS configuration information, including service pack levels
+whoami         |shows the user name and group information along with the respective security identifiers
+netstat        | shows protocol statistics and current TCP/IP network connections
+net user       | shows the user accounts on the computer
+net localgroup | shows the local groups on the computer
+arp            | shows the IP-to-Physical address translation tables
+
+
 
 ************************************
-
-
 ## References
 * https://tryhackme.com/room/breachingad
 * https://tryhackme.com/room/adenumeration
