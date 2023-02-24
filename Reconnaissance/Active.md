@@ -28,6 +28,10 @@ dnsrecon -d [DOMAIN] -D [WORDLIST] -t brt
 dnsenum [DOMAIN]
 ```
 
+```
+nmap --script=dns-zone-transfer -p 53 [DOMAIN]
+```
+
 ## Port Scanning
 
 ### netcat 
