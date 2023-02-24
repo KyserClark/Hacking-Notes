@@ -7,6 +7,16 @@
 * Traceroute
 * Telnet
 * Netcat
+* DNS
+   ```
+   host
+   ```
+   Zone Transfer:
+   ```
+   host -l [DOMAIN] [DNS-SERVER-ADDRESS]
+   ```
+ 
+  
 
 ## Reference
 * https://tryhackme.com/room/activerecon
