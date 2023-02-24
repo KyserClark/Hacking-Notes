@@ -7,7 +7,7 @@ Note: Bracket characters themselves [ ] require removal. See examples.
 
 ## Basic Dictionary Attack
 * -m = Mode (Hash Type Code)
-* -a = attach mode (0 = Dictionary || 3 = Brute Force)
+* -a = attack mode (0 = Dictionary || 3 = Brute Force)
 ```
 hashcat -m [HASH-TYPE-CODE] -a 0 [HASH-FILE] [WORDLIST]
 ```
@@ -21,7 +21,7 @@ hashcat -m 1800 -a 0 hashes.txt wordlists/rockyou.txt
 
 * https://hashes.com/
 
-*These tools many need to be installed*
+*These tools may need to be installed*
 ```
 hashid
 ```
