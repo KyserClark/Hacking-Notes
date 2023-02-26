@@ -1,4 +1,4 @@
-# Buffer Overflows - OSCP Prep
+# Windows - Buffer Overflows
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
