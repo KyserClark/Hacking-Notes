@@ -203,7 +203,7 @@ print()
 #### Step 20: Compare byte array with this command in Immunity to see possible bad characters:
 
 ```
-!mona compare -f C:\mona\oscp\bytearray.bin -a [ESP-ADDRESS]
+!mona compare -f C:\mona\[VULN-APP]\bytearray.bin -a [ESP-ADDRESS]
 ```
 
 #### Step 21: Remove first bad character in the list generated in Step 20 from payload variable in exploit.py
