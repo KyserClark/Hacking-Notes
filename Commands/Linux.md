@@ -13,6 +13,7 @@
    * [Get Capabilities](#get-capabilities)
    * [Mail Directories](#mail-directories)
    * [Installed Applications](#installed-applications)
+   * [Add User To Sudoers](#add-user-to-sudoers)
    * [Miscellaneous](#miscellaneous)
 
 * [Host Rogue LDAP Server](#host-rogue-ldap-server)
@@ -253,6 +254,18 @@ List Installed Packages on Debian based distros:
 dpkg -l
 ```
 *********************************************************************************
+
+### Add User To Sudoers
+
+```
+usermod -aG sudo [USERNAME]
+```
+```
+echo "[USERNAME]  ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+```
+
+*********************************************************************************
+
 ### Miscellaneous
 Show current logges on users:
 ```
