@@ -13,7 +13,7 @@ hashcat -m [HASH-TYPE-CODE] -a 0 [HASH-FILE] [WORDLIST]
 ```
 Example:
 ```
-hashcat -m 1800 -a 0 hashes.txt wordlists/rockyou.txt
+hashcat -m 1800 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt
 ```
 *You can also put the raw hash value in place of the hashfile; I.E. you don't have to use a file for a single hash*
 
