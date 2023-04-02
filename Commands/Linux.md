@@ -387,6 +387,10 @@ Connect to RDP using Pass the Hash (PtH):
 ```
 xfreerdp /v:[TARGET-IP] /u:[DOMAIN]\\[USERNAME] /pth:[NTLM-HASH]
 ```
+To make clipboard usable, use the +clipboard flag:
+```
++clipboard
+```
 
 ### rdesktop 
 
