@@ -125,7 +125,7 @@ exploit
 
 ## nmblookup
 ```
-nmblookkup -A [TARGET-IP]
+nmblookup -A [TARGET-IP]
 ```
 
 ***********************************************************************
