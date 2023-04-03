@@ -1,4 +1,4 @@
-# Hydra - Webpage
+# Hydra - HTTP
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
