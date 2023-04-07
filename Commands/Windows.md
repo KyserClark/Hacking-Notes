@@ -222,6 +222,10 @@ net user       | shows the user accounts on the computer
 net localgroup | shows the local groups on the computer
 arp            | shows the IP-to-Physical address translation tables
 
+cmd file search:
+```
+dir "search term*" /s
+```
 
 
 ************************************
