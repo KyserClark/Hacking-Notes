@@ -9,6 +9,12 @@
 ### Technique #1
 1. Run this command: (replace "python" with "python2" or "python3" as required)
 ```
+python -c 'import pty;pty.spawn("/bin/bash")'
+```
+```
+python2 -c 'import pty;pty.spawn("/bin/bash")'
+```
+```
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 ```
 2. Give access to term commands such as clear with this command:
