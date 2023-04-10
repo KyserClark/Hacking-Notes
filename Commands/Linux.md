@@ -47,12 +47,12 @@ ls /etc/*-release
 ```
 uname -a
 ```
-x86_64 = 64 bit OS  
-i686 = 32 bit OS  
+* x86_64 = 64 bit OS  
+* i686 = 32 bit OS  
 ```
 uname -r
 ```
-Determine if system is 32 or 64 bit
+### Determine if system is 32 or 64 bit
 ```
 getconf LONG_BIT
 ```
