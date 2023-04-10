@@ -3,6 +3,7 @@
 * [Connect to Share via Windows CLI](#connect-to-share-via-windows-cli)
 * [nmap](#nmap)
 * [smbmap](#smbmap)
+* [crackmapexec](#crackmapexec)
 * [Metasploit](#metasploit)
 * [nmblookup](#nmblookup)
 * [smbclient](#smbclient)
@@ -96,6 +97,13 @@ smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP] -x [COMMAND-TO-RUN]
 * -r to look at contents: -r '[DRIVE-LETTER]'$ | Example: -r 'c$'
 * --upload '[FILE-PATH]' '[DESTINATION] | Example: --upload '/root/backdoor' 'C$\backdoor'
 * --download '[FILE-PATH]' | Example: --download 'C$\flag.txt'
+
+***********************************************************************
+
+## crackmapexec
+```
+crackmapexec smb [TARGET-IP]
+```
 
 ***********************************************************************
 
