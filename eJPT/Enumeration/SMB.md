@@ -81,6 +81,9 @@ nmap -p [PORT] --script smb-os-discovery [TARGET-IP]
 smbmap -H [TARGET-IP]
 ```
 ```
+smbmap -H [TARGET-IP] -v
+```
+```
 smbmap -u [USERNAME] -p [PASSWORD] -d . -H [TARGET-IP]
 ```
 ```
