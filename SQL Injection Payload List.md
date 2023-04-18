@@ -76,6 +76,7 @@ In some situations, an attacker can escalate an SQL injection attack to compromi
 ' OR 1 -- -
 " OR "" = "
 " OR 1 = 1 -- -
+'or 1=1--
 ' OR '' = '
 '='
 'LIKE'
