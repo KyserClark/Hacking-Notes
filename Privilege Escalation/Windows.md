@@ -14,7 +14,7 @@
 * [SeTakeOwnership](#setakeownership)
 * [Tools of the Trade](#tools-of-the-trade)
 * [Look for the password Keyword in the Registry](#look-for-the-password-keyword-in-the-registry)
-* [Priv Esc From Administrator to nt authority\system](#priv-esc-from-administrator-to-nt-authority-system)
+* [Priv Esc From Administrator to nt authority system](#priv-esc-from-administrator-to-nt-authority-system)
 
 *********************************************************************************
 Items inside [SQUARE-BRACKETS] indicate changeable (fill in the blank) fields.  
@@ -279,7 +279,7 @@ C:\Users\[USER]> reg query HKCU /f password /t REG_SZ /s
 
 ********************************************
 
-## Priv Esc From Administrator to nt authority\system
+## Priv Esc From Administrator to nt authority system
 
 Credit: https://blog.geoda-security.com/2017/06/elevate-from-admin-to-nt-authoritysystem.html
 
