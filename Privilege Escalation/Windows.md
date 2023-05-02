@@ -85,6 +85,9 @@ Search under the following registry key for ProxyPassword:
 ```
 reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
 ```
+```
+reg query "HKCU\Software\SimonTatham\PuTTY\Sessions"
+```
 
 ********************************************
 
@@ -301,3 +304,4 @@ sc start kyser
 
 ### Reference:
 * https://tryhackme.com/room/windowsprivesc20
+* https://guif.re/windowseop#EoP%203:%20ClearText%20passwords%20(quick%20hits)
