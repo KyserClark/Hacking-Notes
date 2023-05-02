@@ -3,6 +3,9 @@
 ```
 /bin/bash -i
 ```
+```
+/bin/bash -p
+```
 
 ## Netcat Shell Stabilization
 
