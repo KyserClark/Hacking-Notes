@@ -6,7 +6,7 @@ KyserClark.com
 github.com/KyserClark
 linkedin.com/in/KyserClark/
 
-This python script takes any .txt file and removes all whitespace from it.
+This python script takes any .txt file as an argument and removes all whitespace from it.
 """
 
 import sys
