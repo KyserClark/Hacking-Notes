@@ -6,7 +6,7 @@ KyserClark.com
 github.com/KyserClark
 linkedin.com/in/KyserClark/
 
-This python scripts takes any nmap scan output file as an argument and prints all open ports on a single line seperated
+This python script takes any nmap scan output file as an argument and prints all open ports on a single line seperated
 by commas. This is useful to do follow up scans on the open ports with the -p argument.
 """
 
