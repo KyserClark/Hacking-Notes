@@ -5,6 +5,8 @@ def php_escape(input_string):
 
     Escapes a string for safe use in PHP commands, focusing on quotes and backslashes.
     Additional rules can be added as needed.
+
+    To use: Call the script, then you will be prompted to input the string you wish to make safe for PHP commands.
     """
     # Replace backslashes first to avoid escaping already escaped characters
     escaped_string = input_string.replace("\\", "\\\\")
