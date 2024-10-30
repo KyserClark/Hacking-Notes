@@ -98,6 +98,12 @@ smbmap -u [USERNAME] -p "[PASSWORD]" -d . -H [TARGET-IP] -x [COMMAND-TO-RUN]
 * --upload '[FILE-PATH]' '[DESTINATION] | Example: --upload '/root/backdoor' 'C$\backdoor'
 * --download '[FILE-PATH]' | Example: --download 'C$\flag.txt'
 
+### Specify Domain
+```
+smbmap -H [TARGET-IP] -u [USERNAME] -d [DOMAIN]
+```
+* Don't forget to try guest account without a password (not the same as a null login)
+
 ***********************************************************************
 
 ## crackmapexec
@@ -159,6 +165,14 @@ smbclient -L [TARGET-IP] -U [USERNAME]
 ```
 smbclient //[TARGET-IP]/[SHARE] -U [USERNAME]
 ```
+
+# Specify Domain
+```
+smbclient //[TARGET-IP]/[SHARE] -U [USERNAME] -W [DOMAIN]
+```
+
+* Don't forget to try guest account without a password (not the same as a null login)
+
 
 ***********************************************************************
 
