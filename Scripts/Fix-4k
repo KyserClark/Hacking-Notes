@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Created By Kyser Clark - KyserClark.com
+
+# Update ~/.xsessionrc with scaling configurations
+echo "Updating ~/.xsessionrc for regular user..."
+echo "export GDK_SCALE=2" >> ~/.xsessionrc
+echo "export QT_SCALE_FACTOR=2" >> ~/.xsessionrc
+echo "export XCURSOR_SIZE=36" >> ~/.xsessionrc
+echo "~/.xsessionrc updated."
+
+# Apply XFCE theme for HiDPI
+echo "Setting XFCE theme to Kali-Dark-xHiDPI..."
+xfconf-query -c xfwm4 -p /general/theme -s Kali-Dark-xHiDPI
+
+# Set GDK Window Scaling Factor
+echo "Setting GDK Window Scaling Factor..."
+xfconf-query -c xsettings -p /Gdk/WindowScalingFactor -n -t 'int' -s 2
+
+# Add environment variables to sudoers file to fix small text in sudo applications
+echo "Updating sudoers file to keep environment variables when using sudo..."
+sudo sed -i '/Defaults\s*env_keep\s*\+=\s*"/s/\"$/ GDK_SCALE QT_SCALE_FACTOR XCURSOR_SIZE"/' /etc/sudoers
+echo "Sudoers file updated."
+
+# Update root's .zshrc for terminal scaling
+echo "Updating /root/.zshrc for root terminal scaling..."
+sudo bash -c 'echo "export GDK_SCALE=2" >> /root/.zshrc'
+sudo bash -c 'echo "export QT_SCALE_FACTOR=2" >> /root/.zshrc'
+sudo bash -c 'echo "export XCURSOR_SIZE=36" >> /root/.zshrc'
+echo "/root/.zshrc updated."
+
+echo "All configurations applied. Please log out and log back in for changes to take effect."
